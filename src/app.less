@@ -1,0 +1,132 @@
+@import "~normalize.css";
+@import "~@blueprintjs/core/dist/blueprint.css";
+@import "~@blueprintjs/core/dist/variables.less";
+
+@import "components/AppContainer";
+
+html {
+  background-color: white;
+}
+
+body {
+  margin: 0;
+}
+
+#app {
+  width: 100%;
+}
+
+.homepage-app {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+
+  .section {
+    margin: 50px 60px 0 60px;
+  }
+
+  .section-header {
+  }
+
+  .section-description {
+    margin-bottom: 20px;
+  }
+
+  .section-overview {
+    margin-top: 100px;
+
+    .overview-name {
+    }
+
+    .overview-phonetics {
+      font-size: @pt-font-size-small;
+    }
+
+    .overview-links {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      font-size: @pt-font-size-large;
+      margin-top: 30px;
+
+      a {
+        margin-right: 20px;
+      }
+    }
+  }
+
+  .section-talks {
+    //border: solid 1px;
+    //background-color: @light-gray5;
+    border-radius: 5px;
+    //padding: 20px;
+  }
+}
+
+.item {
+  .item-open-toggle {
+    margin: 0 10px 0 0;
+  }
+
+  .item-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-shrink: 0;
+
+    min-height: 40px;
+    padding: 20px 20px 20px 20px;
+    margin: 0;
+
+    background-color: @light-gray5;
+    color: @dark-gray1;
+
+    cursor: pointer;
+
+    &:hover {
+      background-color: @light-gray4;
+    }
+  }
+
+  .item-body {
+    padding: 0 20px 20px 20px;
+    .item-properties {
+      //font-style: italic;
+      font-size: @pt-font-size-small;
+      color: @dark-gray5;
+      margin: 10px 0;
+
+      .item-property {
+        margin: 3px 0 3px 0;
+        .item-property-name {
+          font-weight: bold;
+        }
+      }
+    }
+
+    .item-description {
+      margin-top: 20px;
+      p {
+        margin-bottom: 5px;
+      }
+    }
+  }
+}
+
+a {
+  &:link {
+    color: @blue2;
+  }
+
+  &:visited {
+    color: @blue2;
+  }
+
+  &:hover {
+    color: @blue4;
+  }
+
+  &:active {
+    color: @blue1;
+  }
+}

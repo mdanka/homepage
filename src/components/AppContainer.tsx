@@ -40,7 +40,9 @@ export class AppContainer extends React.PureComponent<IAppContainerProps, {}> {
                     <p className="pt-running-text">
                         I give talks to all age groups on topics ranging from maths, technology and security to entrepreneurship and UX design. <a href="mailto:danka.miklos+homepage[AT]gmail.com">Contact me</a> if you're interested.
                     </p>
-                    {TALKS.map(this.renderTalk)}
+                    <div className="hp-app-talks-list">
+                        {TALKS.map(this.renderTalk)}
+                    </div>
                     {/*<p className="pt-running-text">Past events:*/}
                         {/*<ul>*/}
                             {/*<li>2017: Esoteric Programming Languages @ Tech Camp, Budapest</li>*/}

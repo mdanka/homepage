@@ -18,7 +18,7 @@ export class Section extends React.PureComponent<ISectionProps, {}> {
         );
         return (
             <div className={"hp-section " + this.props.className}>
-                <h4 className="hp-section-header">{this.props.title}</h4>
+                <h3 className="hp-section-header">{this.props.title}</h3>
                 {descriptionElement}
                 {this.props.children}
             </div>

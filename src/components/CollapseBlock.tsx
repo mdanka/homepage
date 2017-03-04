@@ -41,10 +41,10 @@ export class CollapseBlock extends React.PureComponent<ICollapseBlockProps, ICol
     public render() {
         return (
             <div className={"hp-collapse-block pt-elevation-0 " + this.props.className}>
-                <h5 className="hp-collapse-block-header" onClick={this.toggleCollapse}>
+                <h6 className="hp-collapse-block-header" onClick={this.toggleCollapse}>
                     <span className={"hp-collapse-block-toggle pt-icon " + this.getCurrentToggleIcon()} />
                     {this.props.title}
-                </h5>
+                </h6>
                 <Collapse isOpen={this.state.isOpen} className="hp-collapse-block-collapse">
                     {this.props.children}
                 </Collapse>

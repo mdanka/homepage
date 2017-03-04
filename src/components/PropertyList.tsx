@@ -4,6 +4,7 @@ import queryString = require('query-string');
 
 export interface IPropertyListProps {
     properties: IProperty[];
+    title?: string;
     className?: string;
 }
 
@@ -26,6 +27,7 @@ export class PropertyList extends React.PureComponent<IPropertyListProps, {}> {
     public render() {
         return (
             <div className={"hp-property-list " + this.props.className}>
+                <span className="hp-property-list-title">{this.props.title}</span>
                 <div className="hp-property-list-item">
                     {this.props.properties.map(this.renderPropertyListItem)}
                 </div>

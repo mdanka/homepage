@@ -103,6 +103,6 @@ module.exports = {
             },
             template: path.resolve(__dirname, "src/index.html"),
             title: "A Gondolkodás Öröme",
-        }),
+        })
     ],
 }

@@ -10,7 +10,7 @@
     "start": "npm-run-all createBuildDir -p watch:server",
     "watch": "npm-run-all createBuildDir -p watch:bundle",
     "bundle:dev": "webpack -d",
-    "bundle:prod": "webpack --config webpack.config.js",
+    "bundle:prod": "webpack --config webpack.config.js --optimize-minimize",
     "createBuildDir": "mkdirp dist",
     "watch:bundle": "webpack -d -w",
     "watch:server": "webpack-dev-server -d --config webpack.config.server.js"

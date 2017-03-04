@@ -1,10 +1,8 @@
 import * as React from "react";
-import Select = require("react-select");
-import queryString = require('query-string');
 
 export interface ISectionProps {
     title: string;
-    description?: string | React.ReactElement;
+    description?: string | JSX.Element;
     className?: string;
 }
 

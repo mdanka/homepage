@@ -1,0 +1,29 @@
+@import "~normalize.css";
+@import "~@blueprintjs/core/dist/variables.less";
+
+.hp-collapse-block {
+  .hp-collapse-block-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-shrink: 0;
+
+    margin: 0;
+    padding: 1em;
+
+    background-color: @light-gray5;
+    color: @gray1;
+
+    cursor: pointer;
+
+    line-height: 1.25em;
+
+    &:hover {
+      background-color: @light-gray4;
+    }
+
+    .hp-collapse-block-toggle {
+      margin: 0 1em 0 0;
+    }
+  }
+}

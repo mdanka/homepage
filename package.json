@@ -23,7 +23,6 @@
     "react-addons-css-transition-group": "^15.4.2",
     "react-dom": "^15.4.1",
     "react-logger": "^1.1.0",
-    "svgo": "^0.7.2",
     "whatwg-fetch": "^2.0.2"
   },
   "devDependencies": {

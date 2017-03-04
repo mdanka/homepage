@@ -1,7 +1,5 @@
 import * as React from "react";
 import {Collapse} from "@blueprintjs/core";
-import Select = require("react-select");
-import queryString = require('query-string');
 
 export interface ICollapseBlockProps {
     title: string;

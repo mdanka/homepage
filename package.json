@@ -17,17 +17,12 @@
   },
   "dependencies": {
     "@blueprintjs/core": "^1.4.0",
-    "commonjs": "^0.0.1",
     "lodash": "^4.2.0",
     "normalize.css": "^5.0.0",
-    "query-string": "^4.3.1",
     "react": "^15.4.1",
     "react-addons-css-transition-group": "^15.4.2",
     "react-dom": "^15.4.1",
     "react-logger": "^1.1.0",
-    "react-select": "^1.0.0-rc.2",
-    "reselect": "^2.5.4",
-    "url-join": "^1.1.0",
     "whatwg-fetch": "^2.0.2"
   },
   "devDependencies": {
@@ -41,8 +36,6 @@
     "@types/react-addons-transition-group": "^0.14.18",
     "@types/react-dom": "^0.14.20",
     "@types/react-router": "^2.0.45",
-    "@types/react-select": "^1.0.39",
-    "@types/reselect": "^2.0.27",
     "@types/whatwg-fetch": "^0.0.33",
     "autoprefixer": "^6.6.0",
     "autoprefixer-loader": "^3.2.0",

@@ -1,9 +1,5 @@
 import * as React from "react";
-import {Collapse} from "@blueprintjs/core";
-import Select = require("react-select");
-import queryString = require('query-string');
 import {CollapseBlock} from "./CollapseBlock";
-import {IProperty, PropertyList} from "./PropertyList";
 import {Section} from "./Section";
 import {Overview} from "./Overview";
 import {ActivityInfo} from "./ActivityInfo";

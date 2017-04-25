@@ -62,6 +62,7 @@ export class AppContainer extends React.PureComponent<IAppContainerProps, {}> {
                             <li>Supporting children with difficult background at <a href="http://www.tapolcsanyi.hu/" target="_blank">Tapolcsányi Utca Boarding School</a></li>
                             <li>University scholarship for people with difficult backgrounds</li>
                             <li><a href="http://www.ambertrust.org/" target="_blank">The Amber Trust</a> - providing musical education to blind or partially-sighted children</li>
+                            <li><a href="https://momentummozgalom.hu/" target="_blank">Momentum Mozgalom</a> - a new Hungarian party, bringing a European mentality to Hungary</li>
                             <li><a href="https://atlatszo.hu/" target="_blank">Átlátszó</a> - investigative reporting in Hungary</li>
                             <li><a href="https://www.wikimedia.org/" target="_blank">Wikimedia</a></li>
                         </ul>

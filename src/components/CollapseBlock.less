@@ -1,4 +1,5 @@
 @import "~@blueprintjs/core/dist/variables.less";
+@import "../shared";
 
 .hp-collapse-block {
   .hp-collapse-block-header {
@@ -10,15 +11,15 @@
     margin: 0;
     padding: 1em;
 
-    background-color: @light-gray5;
-    color: @gray1;
+    background-color: fadeout(@mainColour, 90%);
+    color: @mainColour;
 
     cursor: pointer;
 
     line-height: 1.25em;
 
     &:hover {
-      background-color: @light-gray4;
+      background-color: fadeout(@mainColour, 80%);
     }
 
     .hp-collapse-block-toggle {

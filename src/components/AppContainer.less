@@ -1,4 +1,5 @@
 @import "~@blueprintjs/core/dist/variables.less";
+@import "../shared";
 
 html {
   background-color: white;
@@ -11,11 +12,16 @@ body {
   flex-direction: column;
   align-items: stretch;
   margin: 0;
+  //font-family: 'Rubik', sans-serif;
 }
 
 p {
   padding: 0.5em 0;
   margin: 0;
+}
+
+a, a:hover, a:active, a:visited {
+  color: @accentColour;
 }
 
 .hp-app {

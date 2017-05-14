@@ -16,7 +16,7 @@ export class CollapseBlock extends React.PureComponent<ICollapseBlockProps, ICol
 
     private IS_OPEN_INITIALLY_DEFAULT = false;
 
-    public constructor(props) {
+    public constructor(props: ICollapseBlockProps) {
         super(props);
         const isOpenInitially = props.isOpenInitially == null
             ? this.IS_OPEN_INITIALLY_DEFAULT

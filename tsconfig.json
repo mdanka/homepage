@@ -1,23 +1,23 @@
 {
     "compilerOptions": {
-        "emitDecoratorMetadata": true,
-        "experimentalDecorators": true,
+        "declaration": true,
+        "importHelpers": true,
         "jsx": "react",
+        "lib": [
+          "dom",
+          "es5",
+          "es2015"
+        ],
         "module": "commonjs",
-        "noEmitHelpers": false,
-        "noImplicitAny": false,
-        "noUnusedLocals": false,
-        "noUnusedParameters": false,
+        "moduleResolution": "node",
+        "noImplicitAny": true,
         "outDir": "build/tmp",
-        "removeComments": false,
         "sourceMap": true,
-        "strictNullChecks": false,
+        "strictNullChecks": true,
         "target": "ES5"
     },
     "exclude": [
         "build",
-        "node_modules",
-        "test",
-        "typings/globals"
+        "node_modules"
     ]
 }

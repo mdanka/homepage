@@ -1,5 +1,6 @@
+import { Collapse } from "@blueprintjs/core";
+import * as classNames from "classnames";
 import * as React from "react";
-import {Collapse} from "@blueprintjs/core";
 
 export interface ICollapseBlockProps {
     title: string;
@@ -17,30 +18,27 @@ export class CollapseBlock extends React.PureComponent<ICollapseBlockProps, ICol
 
     public constructor(props) {
         super(props);
-        // const isOpenInitially = _.defaultTo(props.isOpenInitially, this.IS_OPEN_INITIALLY_DEFAULT);
-        const isOpenInitially = props.isOpenInitially == undefined ? this.IS_OPEN_INITIALLY_DEFAULT : props.isOpenInitially;
+        const isOpenInitially = props.isOpenInitially == null
+            ? this.IS_OPEN_INITIALLY_DEFAULT
+            : props.isOpenInitially;
         this.state = {
             isOpen: isOpenInitially,
-        }
-    }
-
-    private toggleCollapse = () => {
-        const currentIsOpen = this.state.isOpen;
-        const newIsOpen = !currentIsOpen;
-        this.setState({
-            isOpen: newIsOpen,
-        });
-    }
-
-    private getCurrentToggleIcon = () => {
-        return this.state.isOpen ? "pt-icon-chevron-up" : "pt-icon-chevron-down";
+        };
     }
 
     public render() {
+        const iconClasses = classNames(
+            "hp-collapse-block-toggle",
+            "pt-icon",
+            {
+                "pt-icon-chevron-down": !this.state.isOpen,
+                "pt-icon-chevron-up": this.state.isOpen,
+            },
+        );
         return (
-            <div className={"hp-collapse-block pt-elevation-0 " + this.props.className}>
+            <div className={classNames("hp-collapse-block", "pt-elevation-0", this.props.className)}>
                 <h5 className="hp-collapse-block-header" onClick={this.toggleCollapse}>
-                    <span className={"hp-collapse-block-toggle pt-icon " + this.getCurrentToggleIcon()} />
+                    <span className={iconClasses} />
                     {this.props.title}
                 </h5>
                 <Collapse isOpen={this.state.isOpen} className="hp-collapse-block-collapse">
@@ -48,5 +46,9 @@ export class CollapseBlock extends React.PureComponent<ICollapseBlockProps, ICol
                 </Collapse>
             </div>
         );
+    }
+
+    private toggleCollapse = () => {
+        this.setState({ isOpen: !this.state.isOpen });
     }
 }

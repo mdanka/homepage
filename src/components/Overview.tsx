@@ -1,10 +1,6 @@
 import * as React from "react";
 
-export interface IOverviewProps {
-}
-
-export class Overview extends React.PureComponent<IOverviewProps, {}> {
-
+export class Overview extends React.PureComponent<{}, {}> {
     public render() {
         return (
             <div className="hp-overview-section">

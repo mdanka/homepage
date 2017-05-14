@@ -17,8 +17,9 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                 >
                     <p className="pt-running-text">
                         I give talks to all age groups on topics ranging from maths, technology and
-                        security to entrepreneurship and UX design.
-                        <a href="mailto:danka.miklos+homepage[AT]gmail.com">Contact me</a> if you're interested.
+                        security to entrepreneurship and UX design. <a href="mailto:danka.miklos+homepage[AT]gmail.com">
+                            Contact me
+                        </a> if you're interested.
                     </p>
                     <div className="hp-app-talks-list">
                         {TALKS.map(this.renderTalk)}
@@ -36,8 +37,10 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                     title="Donations"
                 >
                     <p className="pt-running-text">
-                        Donating part of your income is
-                        <a href="http://totempaal.tj/2017/01/30/giving-to-charity.html" target="_blank">
+                        Donating part of your income is <a
+                            href="http://totempaal.tj/2017/01/30/giving-to-charity.html"
+                            target="_blank"
+                        >
                             something you should be proud of
                         </a>.
                     </p>
@@ -49,31 +52,30 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                                 </a> - talent education in Hungary
                             </li>
                             <li>
-                                Supporting children with difficult background at
-                                <a href="http://www.tapolcsanyi.hu/" target="_blank">
+                                Supporting children with difficult background at <a
+                                    href="http://www.tapolcsanyi.hu/"
+                                    target="_blank"
+                                >
                                     Tapolcsányi Utca Boarding School
                                 </a>
                             </li>
                             <li>
                                 University scholarship for people with difficult backgrounds
-                                </li>
+                            </li>
                             <li>
                                 <a href="http://www.ambertrust.org/" target="_blank">
                                     The Amber Trust
-                                </a>
-                                - providing musical education to blind or partially-sighted children
+                                </a> - providing musical education to blind or partially-sighted children
                             </li>
                             <li>
                                 <a href="https://momentummozgalom.hu/" target="_blank">
                                     Momentum Mozgalom
-                                </a>
-                                - a new Hungarian party, bringing a European mentality to Hungary
+                                </a> - a new Hungarian party, bringing a European mentality to Hungary
                             </li>
                             <li>
                                 <a href="https://atlatszo.hu/" target="_blank">
                                     Átlátszó
-                                </a>
-                                - investigative reporting in Hungary
+                                </a> - investigative reporting in Hungary
                             </li>
                             <li>
                                 <a href="https://www.wikimedia.org/" target="_blank">

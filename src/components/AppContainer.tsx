@@ -87,6 +87,11 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                                     The Amber Trust
                                 </a> - providing musical education to blind or partially-sighted children
                             </li>
+                            <li>
+                                <a href="http://www.oxfam.org.uk/" target="_blank">
+                                    Oxfam
+                                </a> - charity shop
+                            </li>
                         </ul>
                     </p>
                 </Section>

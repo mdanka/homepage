@@ -63,14 +63,14 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                                 University scholarship for people with difficult backgrounds
                             </li>
                             <li>
-                                <a href="http://www.ambertrust.org/" target="_blank">
-                                    The Amber Trust
-                                </a> - providing musical education to blind or partially-sighted children
-                            </li>
-                            <li>
                                 <a href="https://momentummozgalom.hu/" target="_blank">
                                     Momentum Mozgalom
                                 </a> - a new Hungarian party, bringing a European mentality to Hungary
+                            </li>
+                            <li>
+                                <a href="https://444.hu/" target="_blank">
+                                    444
+                                </a> - Hungarian independent online newspaper
                             </li>
                             <li>
                                 <a href="https://atlatszo.hu/" target="_blank">
@@ -81,6 +81,11 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                                 <a href="https://www.wikimedia.org/" target="_blank">
                                     Wikimedia
                                 </a>
+                            </li>
+                            <li>
+                                <a href="http://www.ambertrust.org/" target="_blank">
+                                    The Amber Trust
+                                </a> - providing musical education to blind or partially-sighted children
                             </li>
                         </ul>
                     </p>

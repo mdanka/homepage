@@ -1,5 +1,3 @@
-import { computeArrowOffset } from '@blueprintjs/core/dist/components/popover/arrows';
-import { BUTTON } from '@blueprintjs/core/dist/common/classes';
 import * as React from "react";
 import {IProperty} from "../components/PropertyList";
 
@@ -217,4 +215,45 @@ export const TALKS: IContentTalk[] = [
         ],
         title: "Big Numbers",
     },
+    {
+        description: (
+            <div>
+                <p className="pt-running-text">
+                    Technology is everywhere in our lives - sometimes to a ridiculous extent, with
+                    useless gadgets and "solutions" which actually make our lives more difficult.
+                    However, when given enough thought, technology serves a purpose. In this talk
+                    we will see how technology can help the disabled to write, the blind to see, and
+                    protect our society from terrorism and crime.
+                </p>
+            </div>
+        ),
+        events: [
+            {
+                key: "2014",
+                value: "Szent István Gimnázium (High School) - Budapest, Hungary",
+            },
+        ],
+        properties: [
+            {
+                key: "Ages",
+                value: "10+",
+            },
+            {
+                key: "Topics",
+                value: "technology",
+            },
+            {
+                key: "Prerequisites",
+                value: "-",
+            },
+        ],
+        title: "Technology for a purpose",
+    },
 ];
+
+/*
+                Future of Tech discussion panel
+                Cambridge
+                Palantir and startups
+                UX workshop for beginners
+*/

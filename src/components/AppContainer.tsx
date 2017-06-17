@@ -96,7 +96,6 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                     </p>
                 </Section>
 
-                {/*<div className="">Big Numbers</div>*/}
                 {/*<div className="">Future of Tech discussion panel</div>*/}
                 {/*<div className="">Iskola: tech for a purpose</div>*/}
                 {/*<div className="">Palantir and startups</div>*/}

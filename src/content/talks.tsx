@@ -1,3 +1,5 @@
+import { computeArrowOffset } from '@blueprintjs/core/dist/components/popover/arrows';
+import { BUTTON } from '@blueprintjs/core/dist/common/classes';
 import * as React from "react";
 import {IProperty} from "../components/PropertyList";
 
@@ -94,6 +96,44 @@ export const TALKS: IContentTalk[] = [
             },
         ],
         title: "How to conquer Mars? A Beginner's Guide. (Elon Musk - SpaceX and Conquering Mars)",
+    },
+    {
+        description: (
+            <div>
+                <p className="pt-running-text">
+                    Artifical intelligence is not even close to humans at the time of writing - but
+                    then why do we use a computer for a seemingly endless number of tasks? Presumably you can
+                    tell a dog from a cat - but is a computer also capable of the same?
+                    How can Google, Siri, or Alexa understand what we say? And finally the most important,
+                    crucial question: who's better at 20 Questions, you, or the computer?
+                </p>
+            </div>
+        ),
+        events: [
+            {
+                key: "2014",
+                value: "MaMuT - Mátrafüred, Hungary",
+            },
+            {
+                key: "2010",
+                value: "MaMuT - Mátrafüred, Hungary",
+            },
+        ],
+        properties: [
+            {
+                key: "Ages",
+                value: "10+",
+            },
+            {
+                key: "Topics",
+                value: "technology",
+            },
+            {
+                key: "Prerequisites",
+                value: "-",
+            },
+        ],
+        title: "Are you smarter than a computer? (Machine Learning)",
     },
     {
         description: (

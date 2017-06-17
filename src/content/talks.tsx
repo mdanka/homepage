@@ -1,3 +1,4 @@
+import { ITab2Props } from '@blueprintjs/core/dist';
 import * as React from "react";
 import {IProperty} from "../components/PropertyList";
 
@@ -175,6 +176,44 @@ export const TALKS: IContentTalk[] = [
             },
         ],
         title: "How to cook an undigestable program with lots of LOLZ? (Esoteric Programming Languages)",
+    },
+    {
+        description: (
+            <div>
+                <p className="pt-running-text">
+                    Many people believe that application design only concerns the aesthetics. While visual
+                    design is certainly important, a core part of developing a new application is the
+                    so called interaction design. How does the user think? What are they trying to achieve?
+                    What is the most intuitive experience for them?
+                </p>
+                <p className="pt-running-text">
+                    In this interactive workshop we will go through visceral examples to build an intuition
+                    for what UX design means and how we can keep it as a first-order concern when building
+                    an application.
+                </p>
+            </div>
+        ),
+        events: [
+            {
+                key: "2017",
+                value: "Tech Camp - Budapest, Hungary",
+            },
+        ],
+        properties: [
+            {
+                key: "Ages",
+                value: "14+",
+            },
+            {
+                key: "Topics",
+                value: "technology, design",
+            },
+            {
+                key: "Prerequisites",
+                value: "-",
+            },
+        ],
+        title: "User Experience workshop for beginners",
     },
     {
         description: (

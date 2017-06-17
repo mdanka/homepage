@@ -102,6 +102,7 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                 {/*<div className="">Future of Tech discussion panel</div>*/}
                 {/*<div className="">Iskola: tech for a purpose</div>*/}
                 {/*<div className="">Palantir and startups</div>*/}
+                {/*<div className="">UX workshop for beginners</div>*/}
 
                 {/*<div className="section section-projects">*/}
                 {/*<h3 className="section-header">Projects</h3>*/}

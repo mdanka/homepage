@@ -26,7 +26,7 @@ export class PropertyList extends React.PureComponent<IPropertyListProps, {}> {
 
     private renderPropertyListItem = (property: IProperty) => {
         return (
-            <div key={property.key} className="hp-property-list-item">
+            <div key={property.key + ":" + property.value} className="hp-property-list-item">
                 <span className="hp-property-list-item-key">{property.key}:</span>
                 <span className="hp-property-list-item-value">{property.value}</span>
             </div>

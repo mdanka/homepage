@@ -138,4 +138,43 @@ export const TALKS: IContentTalk[] = [
         ],
         title: "How to cook an undigestable program with lots of LOLZ? (Esoteric Programming Languages)",
     },
+    {
+        description: (
+            <div>
+                <p className="pt-running-text">
+                    What is a big number? How large a number can you think of? Our view on the
+                    magnitude of numbers is quite limited - our imagination is constrained by
+                    the origins of numbers, back from the early ages of humankind.
+                    Still, using mathematics and sophisticated ideas we can open up new ranges
+                    that are far beyond our imagination. But it's not just humans who are limited:
+                    computers struggle with large numbers as well...
+                </p>
+            </div>
+        ),
+        events: [
+            {
+                key: "2013",
+                value: "Pembroke College, University of Cambridge - Cambridge, UK",
+            },
+            {
+                key: "2010",
+                value: "Churchill College, University of Cambridge - Cambridge, UK",
+            },
+        ],
+        properties: [
+            {
+                key: "Ages",
+                value: "14+",
+            },
+            {
+                key: "Topics",
+                value: "mathematics",
+            },
+            {
+                key: "Prerequisites",
+                value: "some basic mathematical foundation",
+            },
+        ],
+        title: "Big Numbers",
+    },
 ];

@@ -97,12 +97,12 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                 </Section>
 
                 {/*<div className="">Big Numbers</div>*/}
-                {/*<div className="">Cyberwars</div>*/}
-                {/*<div className="">Elon Musk - Conquering Mars</div>*/}
                 {/*<div className="">Future of Tech discussion panel</div>*/}
                 {/*<div className="">Iskola: tech for a purpose</div>*/}
                 {/*<div className="">Palantir and startups</div>*/}
                 {/*<div className="">UX workshop for beginners</div>*/}
+                {/*<div className="">Okosabb vagy, mint egy szamitogep? (Gepi tanulas)</div>*/}
+
 
                 {/*<div className="section section-projects">*/}
                 {/*<h3 className="section-header">Projects</h3>*/}

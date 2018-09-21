@@ -112,7 +112,8 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                 {/*</div>*/}
                 {/*<div className="section section-writings">*/}
                 {/*<div className="">Diákolimpikonok videó és cikk</div>*/}
-                {/*<div className="">Egyetemválasztás</div>*/}
+                {/*<div className="">Hiring</div>*/}
+                {/*<div className="">Egyetemválasztás - a gondolkodás öröme</div>*/}
                 {/*</div>*/}
             </div>
         );

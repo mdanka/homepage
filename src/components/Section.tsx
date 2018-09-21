@@ -1,8 +1,9 @@
 import * as classNames from "classnames";
 import * as React from "react";
+import { H3 } from "@blueprintjs/core";
 
 export interface ISectionProps {
-    title: string;
+    title?: string;
     description?: string | JSX.Element;
     className?: string;
 }
@@ -10,16 +11,17 @@ export interface ISectionProps {
 export class Section extends React.PureComponent<ISectionProps, {}> {
 
     public render() {
-        const descriptionElement = this.props.description == null ? null : (
+        const { title, description, className, children } = this.props;
+        const descriptionElement = description && (
             <div className="hp-section-description">
-                {this.props.description}
+                {description}
             </div>
         );
         return (
-            <div className={classNames("hp-section", this.props.className)}>
-                <h3 className="hp-section-header">{this.props.title}</h3>
+            <div className={classNames("hp-section", className)}>
+                {title && <H3 className="hp-section-header">{title}</H3>}
                 {descriptionElement}
-                {this.props.children}
+                {children}
             </div>
         );
     }

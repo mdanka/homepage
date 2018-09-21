@@ -1,4 +1,4 @@
-import { Collapse } from "@blueprintjs/core";
+import { Collapse, H5 } from "@blueprintjs/core";
 import * as classNames from "classnames";
 import * as React from "react";
 
@@ -29,18 +29,18 @@ export class CollapseBlock extends React.PureComponent<ICollapseBlockProps, ICol
     public render() {
         const iconClasses = classNames(
             "hp-collapse-block-toggle",
-            "pt-icon",
+            "bp3-icon-standard",
             {
-                "pt-icon-chevron-down": !this.state.isOpen,
-                "pt-icon-chevron-up": this.state.isOpen,
+                "bp3-icon-chevron-down": !this.state.isOpen,
+                "bp3-icon-chevron-up": this.state.isOpen,
             },
         );
         return (
             <div className={classNames("hp-collapse-block", "pt-elevation-0", this.props.className)}>
-                <h5 className="hp-collapse-block-header" onClick={this.toggleCollapse}>
+                <H5 className="hp-collapse-block-header" onClick={this.toggleCollapse}>
                     <span className={iconClasses} />
                     {this.props.title}
-                </h5>
+                </H5>
                 <Collapse isOpen={this.state.isOpen} className="hp-collapse-block-collapse">
                     {this.props.children}
                 </Collapse>

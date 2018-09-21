@@ -16,10 +16,10 @@ module.exports = Object.assign({}, baseWebpackConfig, {
     entry: [
         ...baseWebpackConfig.entry.app,
         "webpack/hot/dev-server",
-        `${require.resolve("webpack-dev-server/client/")}?https://localhost:${webpackDevServerPort}`,
+        `${require.resolve("webpack-dev-server/client/")}?http://localhost:${webpackDevServerPort}`,
     ],
     output: Object.assign({}, baseWebpackConfig.output, {
-        publicPath: `https://localhost:${webpackDevServerPort}${baseUrl}`,
+        publicPath: `http://localhost:${webpackDevServerPort}${baseUrl}`,
     }),
     module: Object.assign({}, baseWebpackConfig.module, {
         loaders: baseWebpackConfig.module.loaders.map(loader => {
@@ -57,16 +57,16 @@ module.exports = Object.assign({}, baseWebpackConfig, {
         historyApiFallback: {
             index: baseUrl,
         },
-        https: true,
+        https: false,
         hot: true,
         port: webpackDevServerPort,
-        proxy: {
-            "*": {
-                target: "https://localhost:8443",
-                secure: false,
-            },
-        },
-        publicPath: `https://localhost:${webpackDevServerPort}${baseUrl}`,
+        // proxy: {
+        //     "*": {
+        //         target: "http://localhost:8443",
+        //         secure: false,
+        //     },
+        // },
+        publicPath: `http://localhost:${webpackDevServerPort}${baseUrl}`,
         stats: baseWebpackConfig.stats,
     },
 });

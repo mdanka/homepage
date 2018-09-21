@@ -12,10 +12,22 @@ export class AppContainer extends React.PureComponent<{}, {}> {
             <div className="hp-app">
                 <Overview />
 
+                <Section>
+                    <p className="bp3-running-text bp3-text-large">
+                        Miklós is a product manager, software engineer, hiring manager, teacher, and public speaker. He enjoys taking hard topics like mathematics and technology and making them fun and enjoyable for all audiences, let them be young, non-technical, or anything else.
+                    </p>
+
+                    <p className="bp3-running-text bp3-text-large">
+                       If you'd like to invite Miklós to an event, please reach out <a href="mailto:danka.miklos+homepage[AT]gmail.com">
+                            here
+                        </a>.
+                    </p>
+                </Section>
+
                 <Section
                     title="Talks"
                 >
-                    <p className="pt-running-text">
+                    <p className="bp3-running-text bp3-text-large">
                         I give talks to all age groups on topics ranging from maths, technology and
                         security to entrepreneurship and UX design. <a href="mailto:danka.miklos+homepage[AT]gmail.com">
                             Contact me
@@ -24,7 +36,7 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                     <div className="hp-app-talks-list">
                         {TALKS.map(this.renderTalk)}
                     </div>
-                    {/*<p className="pt-running-text">Past events:*/}
+                    {/*<p className="bp3-running-text bp3-text-large">Past events:*/}
                     {/*<ul>*/}
                     {/*<li>2017: Esoteric Programming Languages @ Tech Camp, Budapest</li>*/}
                     {/*<li>2016: Elon Musk - Conquering Mars @ MaMuT, Mátrafüred</li>*/}
@@ -36,7 +48,7 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                 <Section
                     title="Donations"
                 >
-                    <p className="pt-running-text">
+                    <p className="bp3-running-text bp3-text-large">
                         Donating part of your income is <a
                             href="http://totempaal.tj/2017/01/30/giving-to-charity.html"
                             target="_blank"
@@ -44,7 +56,7 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                             something you should be proud of
                         </a>.
                     </p>
-                    <p className="pt-running-text">I support the following charities and organisations:
+                    <p className="bp3-running-text bp3-text-large">I support the following charities and organisations:
                         <ul>
                             <li>
                                 <a href="http://agondolkodasorome.hu" target="_blank">
@@ -100,7 +112,6 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                 {/*<div className="">Iskola: tech for a purpose</div>*/}
                 {/*<div className="">Palantir and startups</div>*/}
                 {/*<div className="">UX workshop for beginners</div>*/}
-
 
                 {/*<div className="section section-projects">*/}
                 {/*<h3 className="section-header">Projects</h3>*/}

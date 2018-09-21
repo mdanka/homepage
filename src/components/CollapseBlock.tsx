@@ -36,7 +36,7 @@ export class CollapseBlock extends React.PureComponent<ICollapseBlockProps, ICol
             },
         );
         return (
-            <div className={classNames("hp-collapse-block", "pt-elevation-0", this.props.className)}>
+            <div className={classNames("hp-collapse-block", "bp3-elevation-0", this.props.className)}>
                 <H5 className="hp-collapse-block-header" onClick={this.toggleCollapse}>
                     <span className={iconClasses} />
                     {this.props.title}

@@ -114,7 +114,7 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                             href="https://technion.ac.il/en/technion-israel-institute-of-technology/"
                         />
                         <Box
-                            title="Future of Tech"
+                            title="Future of Technology"
                             description="Interview about the latest trends in technology, including big data and AI."
                             language="hu"
                             metadata="2015 - Nemzetközi Kör"

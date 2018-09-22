@@ -1,0 +1,143 @@
+@import "../shared";
+
+@boxBackground: #f2f3f5;
+
+.hp-box {
+  background-color: @boxBackground;
+  border: #dddfe2 1px solid;
+  border-width: 1px 1px 0 1px;
+  overflow: hidden;
+  position: relative;
+
+  width: 500px;
+  height: 140px;
+
+  a {
+    color: inherit;
+    text-decoration: inherit;
+  }
+
+  &:last-child {
+    border-bottom: #dddfe2 1px solid;
+  }
+  
+  &.hp-box-interactive:hover {
+    background-color: darken(@boxBackground, 5%);
+  }
+}
+
+.hp-box-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+.hp-box-image-container {
+  min-width: 140px;
+  width: 140px;
+  height: 140px;
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hp-box-content {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+
+  padding: 10px 12px;
+}
+
+.hp-box-metadata {
+  margin: 5px 0 0 0;
+  color: #606770;
+  font-size: 12px;
+  line-height: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+
+.hp-box-title {
+  margin: 5px 0 0 0;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.hp-box-description {
+  margin: 3px 0 0 0;
+  color: #606770;
+  font-size: 14px;
+  line-height: 20px;
+  word-break: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.hp-box-language {
+  height: 20px;
+  width: 30px;
+  
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  &.hp-box-language-hu {
+    background-image: url("../assets/flag-hu.png");
+  }
+
+  &.hp-box-language-en {
+    background-image: url("../assets/flag-en.png");
+  }
+}
+
+// Media-dependent sizing
+
+@media (max-width: 576px) {
+  .hp-box {
+    width: 350px;
+    height: 100px;
+  }
+
+  .hp-box-image-container {
+    width: 100px;
+    height: 100px;
+  }
+
+  .hp-box-content {
+    padding: 5px 6px;
+  }
+
+  .hp-box-domain {
+    font-size: 10px;
+    line-height: 12px;
+  }
+  
+  .hp-box-title {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .hp-box-description {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .hp-box-language {
+    height: 20px;
+
+    top: 7px;
+    right: 7px;
+  }
+}

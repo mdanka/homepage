@@ -4,6 +4,7 @@ import { ActivityInfo } from "./ActivityInfo";
 import { CollapseBlock } from "./CollapseBlock";
 import { Overview } from "./Overview";
 import { Section } from "./Section";
+import { Box } from "./Box";
 
 const profileImage = require("../assets/mdanka-profile.png");
 
@@ -25,6 +26,70 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                     <p className="bp3-running-text bp3-text-large">
                         If you'd like to invite Miklós to speak at an event, please reach out{" "}
                         <a href="mailto:danka.miklos+homepage[AT]gmail.com">here</a>.
+                    </p>
+                </Section>
+
+                <Section title="Articles">
+                    <p className="hp-center">
+                        <Box
+                            title="Humans and Computers: Symbiosis or War?"
+                            description="Will computers really replace humans? Or is there a different future awaiting?"
+                            language="hu"
+                            metadata="2018"
+                            image={require("../assets/article-qubit-human-computer-symbiosis.png")}
+                            href="https://qubit.hu/2018/06/05/ember-es-gep-szimbiozis-vagy-haboru"
+                        />
+                        <Box
+                            title="The Dark Side of Cryptocurrencies"
+                            description="There's enormous hype, but little practical value. Is it wise to invest in Bitcoin?"
+                            language="hu"
+                            metadata="2018"
+                            image={require("../assets/article-qubit-crypto.jpeg")}
+                            href="https://qubit.hu/2018/02/13/a-kriptovalutak-arnyoldala-miert-ne-fektess-bitcoinba"
+                        />
+                        <Box
+                            title="Choosing Universities - An Alternative Way"
+                            description="Discussions around universities tend to be dominated by subject quality, while we undervalue elements like culture, mindset, and opportunities."
+                            language="en"
+                            metadata="2016"
+                            image={require("../assets/article-ago-university.png")}
+                            href="http://blog.miklosdanka.com/choosing-universities-an-alternative-way"
+                        />
+                        <Box
+                            title="Egyetemválasztás - másként"
+                            description="Az egyetemválasztáskor szinte mindig csak a tárgy minőségét vesszük figyelembe, viszont alulértékeljük a kultúrát, a gondolkodásmódot, és a lehetőségeket."
+                            language="hu"
+                            metadata="2016"
+                            image={require("../assets/ago-logo.png")}
+                            href="http://agondolkodasorome.hu/fb/danka-miklos-egyetemvalasztas-maskent/"
+                        />
+                        <Box
+                            title="Hungarian Education & Olympiads"
+                            description="The Hungarian government's false praises to students are hypocritical given their education policies. Opinion piece."
+                            language="hu"
+                            metadata="2014"
+                            image={require("../assets/article-atlatszo-oktatas.png")}
+                            href="https://atlatszooktatas.blog.hu/2014/01/28/_ide_aztan_mindenkinek_lesz_kedve_hazajonni_egy_tanar_a_diakolimpiai_dijkiosztorol"
+                        />
+                    </p>
+                </Section>
+
+                <Section title="Talks">
+                    <p className="hp-center">
+                        <Box
+                            title="Humans and Computers: Symbiosis or War?"
+                            description="Will computers really replace humans? Or is there a different future awaiting?"
+                            metadata="2018 - HTE"
+                            image={require("../assets/event-hte-2018.png")}
+                        />
+                        <Box
+                            title="A Non-Technical Introduction to Bitcoin"
+                            description="There's enormous hype, but little practical value. What are its advantages and dangers?"
+                            language="hu"
+                            metadata="2018 - OTP Bank"
+                            image={require("../assets/event-otp-2018.jpg")}
+                            href="https://www.youtube.com/watch?v=0OBds6_nGZA"
+                        />
                     </p>
                 </Section>
 

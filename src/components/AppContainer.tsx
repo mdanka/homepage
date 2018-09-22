@@ -35,7 +35,7 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                 </Section>
 
                 <Section title="Articles">
-                    <p className="hp-center">
+                    <div className="hp-center hp-content-paragraph">
                         <Box
                             title="Humans and Computers: Symbiosis or War?"
                             description="Will computers really replace humans? Or is there a different future awaiting?"
@@ -76,11 +76,11 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                             image={require("../assets/article-atlatszo-oktatas.png")}
                             href="https://atlatszooktatas.blog.hu/2014/01/28/_ide_aztan_mindenkinek_lesz_kedve_hazajonni_egy_tanar_a_diakolimpiai_dijkiosztorol"
                         />
-                    </p>
+                    </div>
                 </Section>
 
                 <Section title="Events">
-                    <p className="hp-center">
+                    <div className="hp-center hp-content-paragraph">
                         <Box
                             title="Humans and Computers: Symbiosis or War?"
                             description="Conference lecture and panel discussion with other experts."
@@ -121,7 +121,7 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                             image={require("../assets/event-nemzetkozi-kor-2015.jpg")}
                             href="https://facebook.com/nemzetkozikor/"
                         />
-                    </p>
+                    </div>
 
                     <p className="hp-center bp3-running-text bp3-text-large">
                         Further events: Palantir Technologies, London, UK (2014); Churchill College, Cambridge, UK
@@ -140,7 +140,7 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                         and business experts.
                     </p>
 
-                    <p className="hp-center">
+                    <div className="hp-center hp-content-paragraph">
                         <Box
                             title="A Non-Technical Introduction to Bitcoin"
                             description="There's enormous hype, but little practical value. What are its advantages and dangers?"
@@ -195,11 +195,11 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                             description="Algorithmic thinking is a mindset that's particularly well-suited for teaching in Maths classes. I present a few highly fun problem sets which we solve together in this workshop."
                             image={require("../assets/talk-algorithm-teaching.png")}
                         />
-                    </p>
+                    </div>
                 </Section>
 
                 <Section title="Projects">
-                    <p className="hp-center">
+                    <div className="hp-center hp-content-paragraph">
                         <Box
                             title="Momo Tabs (Work in Progress)"
                             description="Beautiful and lightweight guitar tabs and chord sheets."
@@ -208,11 +208,11 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                             image={require("../assets/project-momotabs.png")}
                             href="https://momotabs.com"
                         />
-                    </p>
+                    </div>
                 </Section>
 
                 <Section title="Teaching">
-                    <p className="hp-center">
+                    <div className="hp-center hp-content-paragraph">
                         <Box
                             title="Tech Camp"
                             description="Founder of a novel program to promote industrial programming with a purpose."
@@ -253,13 +253,15 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                             image={require("../assets/project-churchill.png")}
                             href="https://chu.cam.ac.uk/"
                         />
-                    </p>
+                    </div>
                 </Section>
 
                 <Section title="Donations">
                     <p className="bp3-running-text bp3-text-large">
                         I donate part of my income to causes that personally matter to me. I support the following
                         charities and organisations:
+                    </p>
+                    <div className="hp-content-paragraph bp3-running-text bp3-text-large">
                         <ul>
                             <li>
                                 <a href="http://agondolkodasorome.hu" target="_blank">
@@ -310,7 +312,7 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                                 - charity shop
                             </li>
                         </ul>
-                    </p>
+                    </div>
                 </Section>
 
                 {/*<div className="section section-projects">*/}

@@ -19,14 +19,26 @@ p {
   margin: 0;
 }
 
-p.hp-center {
+.hp-center {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+.hp-content-paragraph {
+  padding: 8px 0;
+}
+
 a, a:hover, a:active, a:visited {
   color: @accentColour;
+}
+
+.hp-anchor {
+  color: @accentColour;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .hp-app {

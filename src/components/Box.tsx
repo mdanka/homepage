@@ -25,11 +25,7 @@ export class Box extends React.PureComponent<IBoxProps, IBoxState> {
             ) : (
                 <div className="hp-box-metadata">
                     {metadata} {metadata && domain && " - "}
-                    {domain && (
-                        <a href={href} target="_blank">
-                            {domain}
-                        </a>
-                    )}
+                    {domain && <span className="hp-anchor">{domain}</span>}
                 </div>
             );
         const imageStyle = image === undefined ? {} : { backgroundImage: `url(${image})` };

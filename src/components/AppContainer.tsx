@@ -145,38 +145,68 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                             title="Cyberwars - Tricks, Cons, and Fraud"
                             description="The internet is the wildest of virtual battlefields, where criminals and computer
                             scientists are fighting at every moment. Online safety, fraud, cons, tricks. Would you fall for them?"
+                            image={require("../assets/talk-cyberwars.png")}
                         />
                         <Box
                             title="How to Conquer Mars? (SpaceX)"
                             description="The whole of Earth is populated now by humans, but we didn't get far in space. What do we need in order to get to Mars - and then to conquer it?"
+                            image={require("../assets/talk-spacex.jpg")}
                         />
                         <Box
                             title="Are You Smarter Than a Computer? (ML)"
                             description="Artifical intelligence is not even close to humans at most tasks - but then why do we use a computer for an endless number of tasks? And most importantly: who's better at 20 Questions, you, or the computer?"
+                            image={require("../assets/talk-ml.png")}
                         />
                         <Box
                             title="Esoteric Programming Languages"
                             description="While most programming languages are useful but not exceptionally fun... esoteric programming languages are exactly the opposite! In this practical session we'll get an overview via puzzles and prizes."
+                            image={require("../assets/talk-esoteric.png")}
                         />
                         <Box
                             title="User Experience Workshop"
                             description="In this interactive workshop for beginners we go through visceral examples to build an intuition for what UX design means and how we can keep it as a first-order concern when building an application."
+                            image={require("../assets/talk-ux.jpg")}
                         />
                         <Box
                             title="Big Numbers"
                             description="What is a big number? How large a number can you think of? Using sophisticated ideas we can open up new ranges that are far beyond our imagination - or the capabilities of computers!"
+                            image={require("../assets/talk-big-numbers.jpg")}
                         />
                         <Box
                             title="Technology for a Purpose"
                             description="Tech is frequently used to useless ends, but it can serve a purpose too. In this talk we will see how tech can help the disabled to write, the blind to see, and protect our society from terrorism and crime."
+                            image={require("../assets/talk-tech-purpose.png")}
                         />
                         <Box
                             title="Studying at Cambridge, UK"
                             description="An overview of the British university system and the particularities and culture of Cambridge."
+                            image={require("../assets/talk-cambridge.jpg")}
                         />
                         <Box
                             title="Algorithmic Thinking in Maths Classes"
                             description="Algorithmic thinking is a mindset that's particularly well-suited for teaching in Maths classes. I present a few highly fun problem sets which we solve together in this workshop."
+                            image={require("../assets/talk-algorithm-teaching.png")}
+                        />
+                    </p>
+                </Section>
+
+                <Section title="Projects">
+                    <p className="hp-center">
+                        <Box
+                            title="Momo Tabs"
+                            description="Beautiful and lightweight guitar tabs and chord sheets."
+                            language="en"
+                            metadata="2018"
+                            image={require("../assets/project-momotabs.png")}
+                            href="https://momotabs.com"
+                        />
+                        <Box
+                            title="Tech Camp"
+                            description="Mentoring students to promote industrial programming with a purpose."
+                            language="hu"
+                            metadata="2016-present"
+                            image={require("../assets/project-techtabor.png")}
+                            href="http://techtabor.agondolkodasorome.hu/"
                         />
                     </p>
                 </Section>

@@ -48,7 +48,7 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                             href="https://qubit.hu/2018/02/13/a-kriptovalutak-arnyoldala-miert-ne-fektess-bitcoinba"
                         />
                         <Box
-                            title="Choosing Universities - An Alternative Way"
+                            title="Choosing Universities Differently - EN"
                             description="Discussions around universities tend to be dominated by subject quality, while we undervalue elements like culture, mindset, and opportunities."
                             language="en"
                             metadata="2016"
@@ -56,7 +56,7 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                             href="http://blog.miklosdanka.com/choosing-universities-an-alternative-way"
                         />
                         <Box
-                            title="Egyetemválasztás - másként"
+                            title="Choosing Universities Differently - HU"
                             description="Az egyetemválasztáskor szinte mindig csak a tárgy minőségét vesszük figyelembe, alulértékelve a kultúrát, a gondolkodásmódot, és a lehetőségeket."
                             language="hu"
                             metadata="2016"
@@ -83,6 +83,14 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                             metadata="2018 - HTE"
                             image={require("../assets/event-hte-2018.png")}
                             href="http://www.hte.hu/web/infokom2018"
+                        />
+                        <Box
+                            title="Algorithmic Thinking in Maths Classes"
+                            description="Conference lecture to teachers on bringing algorithmic thinking to Maths classes."
+                            language="hu"
+                            metadata="2018 - Rátz László Vándorgyűlés"
+                            image={require("../assets/event-ratz-2018.png")}
+                            href="http://ratz.krudy.gyor.hu/index.php/programok/csutortok"
                         />
                         <Box
                             title="A Non-Technical Introduction to Bitcoin"

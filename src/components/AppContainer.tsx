@@ -15,7 +15,7 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                     <p className="bp3-running-text bp3-text-large">
                         <img src={profileImage} className="hp-image-inline hp-image-left" />
                         Miklós is a software engineer, product manager, hiring manager, teacher, and public speaker. He
-                        enjoys making beautiful and easy-to-use software products, and making hard topics like
+                        enjoys making friendly and easy-to-use software products, and making hard topics like
                         mathematics and technology fun and enjoyable for all audiences, let them be of any age,
                         background, or expertise.
                     </p>

@@ -88,7 +88,7 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                             language="hu"
                             metadata="2018 - OTP Bank"
                             image={require("../assets/event-otp-2018.jpg")}
-                            href="https://www.youtube.com/watch?v=0OBds6_nGZA"
+                            href="https://youtube.com/watch?v=0OBds6_nGZA"
                         />
                     </p>
                 </Section>

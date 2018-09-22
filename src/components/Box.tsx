@@ -24,11 +24,16 @@ export class Box extends React.PureComponent<IBoxProps, IBoxState> {
                 undefined
             ) : (
                 <div className="hp-box-metadata">
-                    {metadata} {metadata && domain && " - "} {domain}
+                    {metadata} {metadata && domain && " - "}
+                    {domain && (
+                        <a href={href} target="_blank">
+                            {domain}
+                        </a>
+                    )}
                 </div>
             );
         const boxContentElement = (
-            <div className="hp-box-flex">
+            <div className="hp-box-content-container">
                 {image != null && (
                     <div className="hp-box-image-container" style={{ backgroundImage: `url(${image})` }} />
                 )}
@@ -45,7 +50,7 @@ export class Box extends React.PureComponent<IBoxProps, IBoxState> {
             href === undefined ? (
                 boxElements
             ) : (
-                <a href={href} target="_blank">
+                <a className="hp-box-anchor" href={href} target="_blank">
                     {boxElements}
                 </a>
             );

@@ -2,6 +2,26 @@
 
 @boxBackground: #f2f3f5;
 
+@boxWidth: 500px;
+@boxHeight: 140px;
+@boxImageSize: @boxHeight;
+@boxContentWidth: @boxWidth - @boxImageSize;
+@boxContentHeight: @boxHeight;
+@boxContentPaddingVertical: 10px;
+@boxContentPaddingHorizontal: 12px;
+@boxContentTextWidth: @boxContentWidth - 2 * @boxContentPaddingVertical;
+@boxLanguageWidth: 30px;
+@boxLanguageHeight: @boxLanguageWidth * 2 / 3;
+@boxLanguageTop: 10px;
+@boxLanguageRight: @boxLanguageTop;
+
+@boxMetadataFontSize: 12px;
+@boxMetadataLineHeight: 16px;
+@boxTitleFontSize: 16px;
+@boxTitleLineHeight: 20px;
+@boxDescriptionFontSize: 14px;
+@boxDescriptionLineHeight: 20px;
+
 .hp-box {
   background-color: @boxBackground;
   border: #dddfe2 1px solid;
@@ -9,8 +29,8 @@
   overflow: hidden;
   position: relative;
 
-  width: 500px;
-  height: 140px;
+  width: @boxWidth;
+  height: @boxHeight;
 
   a.hp-box-anchor {
     color: inherit;
@@ -27,15 +47,17 @@
 }
 
 .hp-box-content-container {
-  display: flex;
-  flex-direction: row;
-  align-items: stretch;
+  width: @boxWidth;
+  height: @boxHeight;
 }
 
 .hp-box-image-container {
-  min-width: 140px;
-  width: 140px;
-  height: 140px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: @boxImageSize;
+  width: @boxImageSize;
+  height: @boxImageSize;
 
   background-position: center;
   background-size: cover;
@@ -47,14 +69,22 @@
   flex-direction: column;
   align-items: stretch;
 
-  padding: 10px 12px;
+  position: absolute;
+  top: 0;
+  left: @boxImageSize;
+  width: @boxContentWidth;
+  height: @boxContentHeight;
+
+  padding: @boxContentPaddingVertical @boxContentPaddingHorizontal;
 }
 
 .hp-box-metadata {
+  width: @boxContentTextWidth;
   margin: 5px 0 0 0;
   color: #606770;
-  font-size: 12px;
-  line-height: 16px;
+  font-size: @boxMetadataFontSize;
+  line-height: @boxMetadataLineHeight;
+  min-height: @boxMetadataLineHeight;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -62,32 +92,35 @@
 }
 
 .hp-box-title {
+  width: @boxContentTextWidth;
   margin: 5px 0 0 0;
   font-weight: 600;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: @boxTitleFontSize;
+  line-height: @boxTitleLineHeight;
+  min-height: @boxTitleLineHeight;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 .hp-box-description {
+  width: @boxContentTextWidth;
   margin: 3px 0 0 0;
   color: #606770;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: @boxDescriptionFontSize;
+  line-height: @boxDescriptionLineHeight;
+  min-height: @boxDescriptionLineHeight;
   word-break: break-word;
   overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .hp-box-language {
-  height: 20px;
-  width: 30px;
+  width: @boxLanguageWidth;
+  height: @boxLanguageHeight;
   
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: @boxLanguageTop;
+  right: @boxLanguageRight;
 
   background-position: center;
   background-size: contain;
@@ -105,38 +138,65 @@
 // Media-dependent sizing
 
 @media (max-width: 576px) {
+  @boxWidth: 350px;
+  @boxHeight: 100px;
+  @boxImageSize: @boxHeight;
+  @boxContentWidth: @boxWidth - @boxImageSize;
+  @boxContentHeight: @boxHeight;
+  @boxContentPaddingVertical: 5px;
+  @boxContentPaddingHorizontal: 6px;
+  @boxContentTextWidth: @boxContentWidth - 2 * @boxContentPaddingVertical;
+  @boxLanguageWidth: 30px;
+  @boxLanguageHeight: @boxLanguageWidth * 2 / 3;
+  @boxLanguageTop: 7px;
+  @boxLanguageRight: @boxLanguageTop;
+
+  @boxMetadataFontSize: 10px;
+  @boxMetadataLineHeight: 12px;
+  @boxTitleFontSize: 14px;
+  @boxTitleLineHeight: 16px;
+  @boxDescriptionFontSize: 11px;
+  @boxDescriptionLineHeight: 13px;
+
   .hp-box {
-    width: 350px;
-    height: 100px;
+    width: @boxWidth;
+    height: @boxHeight;
   }
 
   .hp-box-image-container {
-    min-width: 100px;
-    width: 100px;
-    height: 100px;
+    min-width: @boxImageSize;
+    width: @boxImageSize;
+    height: @boxImageSize;
   }
 
   .hp-box-content {
-    padding: 5px 6px;
+    left: @boxImageSize;
+    padding: @boxContentPaddingVertical @boxContentPaddingHorizontal;
   }
 
-  .hp-box-domain {
-    font-size: 10px;
-    line-height: 12px;
+  .hp-box-metadata {
+    width: @boxContentTextWidth;
+    font-size: @boxMetadataFontSize;
+    line-height: @boxMetadataLineHeight;
+    min-height: @boxMetadataLineHeight;
   }
   
   .hp-box-title {
-    font-size: 14px;
-    line-height: 16px;
+    width: @boxContentTextWidth;
+    font-size: @boxTitleFontSize;
+    line-height: @boxTitleLineHeight;
+    min-height: @boxTitleLineHeight;
   }
 
   .hp-box-description {
-    font-size: 12px;
-    line-height: 14px;
+    width: @boxContentTextWidth;
+    font-size: @boxDescriptionFontSize;
+    line-height: @boxDescriptionLineHeight;
+    min-height: @boxDescriptionLineHeight;
   }
 
   .hp-box-language {
-    top: 7px;
-    right: 7px;
+    top: @boxLanguageTop;
+    right: @boxLanguageRight;
   }
 }

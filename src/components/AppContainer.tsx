@@ -57,7 +57,7 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                         />
                         <Box
                             title="Egyetemválasztás - másként"
-                            description="Az egyetemválasztáskor szinte mindig csak a tárgy minőségét vesszük figyelembe, viszont alulértékeljük a kultúrát, a gondolkodásmódot, és a lehetőségeket."
+                            description="Az egyetemválasztáskor szinte mindig csak a tárgy minőségét vesszük figyelembe, alulértékelve a kultúrát, a gondolkodásmódot, és a lehetőségeket."
                             language="hu"
                             metadata="2016"
                             image={require("../assets/ago-logo.png")}

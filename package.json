@@ -69,6 +69,7 @@
     "tslint-react": "^3.0.0",
     "typescript": "^2.1.4",
     "typings": "^2.1.0",
+    "url-loader": "^1.1.1",
     "webpack": "^1.14.0",
     "webpack-build-notifier": "^0.1.29",
     "webpack-dev-server": "^1.16.2"

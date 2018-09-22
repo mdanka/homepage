@@ -5,6 +5,8 @@ import { CollapseBlock } from "./CollapseBlock";
 import { Overview } from "./Overview";
 import { Section } from "./Section";
 
+const profileImage = require("../assets/mdanka-profile.png");
+
 export class AppContainer extends React.PureComponent<{}, {}> {
     public render() {
         return (
@@ -13,10 +15,11 @@ export class AppContainer extends React.PureComponent<{}, {}> {
 
                 <Section>
                     <p className="bp3-running-text bp3-text-large">
-                        Miklós is a product manager, software engineer, hiring manager, teacher, and public speaker. He
-                        enjoys making beautiful and easy-to-use software products, and taking hard topics like
-                        mathematics and technology and making them fun and enjoyable for all audiences, let them be
-                        young, non-technical, or anything else.
+                        <img src={profileImage} className="hp-image-inline hp-image-left" />
+                        Miklós is a software engineer, product manager, hiring manager, teacher, and public speaker. He
+                        enjoys making beautiful and easy-to-use software products, and making hard topics like
+                        mathematics and technology fun and enjoyable for all audiences, let them be of any age,
+                        background, or expertise.
                     </p>
 
                     <p className="bp3-running-text bp3-text-large">

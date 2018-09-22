@@ -13,12 +13,10 @@ export class Overview extends React.PureComponent<{}, {}> {
                     <a href="https://github.com/mdanka/" target="_blank">
                         Github
                     </a>
-                    <a href="https://twitter.com/miklosdanka" target="_blank">
-                        Twitter
+                    <a href="https://www.linkedin.com/in/mikl%C3%B3s-andr%C3%A1s-danka-19415147/" target="_blank">
+                        LinkedIn
                     </a>
-                    <a href="https://www.facebook.com/miklos.andras.danka" target="_blank">
-                        Facebook
-                    </a>
+                    <a href="mailto:danka.miklos+homepage[AT]gmail.com">Email</a>
                 </div>
             </div>
         );

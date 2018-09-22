@@ -24,6 +24,14 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                         If you'd like to invite Miklós to speak at an event, please reach out{" "}
                         <a href="mailto:danka.miklos+homepage[AT]gmail.com">here</a>.
                     </p>
+
+                    <p className="bp3-running-text bp3-text-large">
+                        Jump to: <a href="#id-section-header-Articles">Articles</a> ·{" "}
+                        <a href="#id-section-header-Events">Events</a> · <a href="#id-section-header-Talks">Talks</a> ·{" "}
+                        <a href="#id-section-header-Projects">Projects</a> ·{" "}
+                        <a href="#id-section-header-Teaching">Teaching</a> ·{" "}
+                        <a href="#id-section-header-Donations">Donations</a>
+                    </p>
                 </Section>
 
                 <Section title="Articles">
@@ -79,7 +87,7 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                             language="hu"
                             metadata="2018 - HTE"
                             image={require("../assets/event-hte-2018.png")}
-                            href="http://www.hte.hu/web/infokom2018"
+                            href="http://hte.hu/web/infokom2018"
                         />
                         <Box
                             title="Algorithmic Thinking in Maths Classes"
@@ -203,7 +211,7 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                     </p>
                 </Section>
 
-                <Section title="Teaching Projects">
+                <Section title="Teaching">
                     <p className="hp-center">
                         <Box
                             title="Tech Camp"
@@ -243,7 +251,7 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                             language="en"
                             metadata="2012-2017"
                             image={require("../assets/project-churchill.png")}
-                            href="https://www.chu.cam.ac.uk/"
+                            href="https://chu.cam.ac.uk/"
                         />
                     </p>
                 </Section>

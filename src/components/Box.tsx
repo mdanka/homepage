@@ -34,7 +34,7 @@ export class Box extends React.PureComponent<IBoxProps, IBoxState> {
             );
         const imageStyle = image === undefined ? {} : { backgroundImage: `url(${image})` };
         const boxContentElement = (
-            <div className="hp-box-content-container">
+            <div key="box-content" className="hp-box-content-container">
                 <div className="hp-box-image-container" style={imageStyle} />
                 <div className="hp-box-content">
                     {metadataElement}
@@ -43,7 +43,7 @@ export class Box extends React.PureComponent<IBoxProps, IBoxState> {
                 </div>
             </div>
         );
-        const flagElement = language && <div className={`hp-box-language hp-box-language-${language}`} />;
+        const flagElement = language && <div key="flag" className={`hp-box-language hp-box-language-${language}`} />;
         const boxElements = [flagElement, boxContentElement];
         const boxContentWithLinkElements =
             href === undefined ? (

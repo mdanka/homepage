@@ -9,14 +9,9 @@ export interface ISectionProps {
 }
 
 export class Section extends React.PureComponent<ISectionProps, {}> {
-
     public render() {
         const { title, description, className, children } = this.props;
-        const descriptionElement = description && (
-            <div className="hp-section-description">
-                {description}
-            </div>
-        );
+        const descriptionElement = description && <div className="hp-section-description">{description}</div>;
         return (
             <div className={classNames("hp-section", className)}>
                 {title && <H3 className="hp-section-header">{title}</H3>}

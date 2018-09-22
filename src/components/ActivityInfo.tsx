@@ -11,16 +11,9 @@ export class ActivityInfo extends React.PureComponent<IActivityInfoProps, {}> {
     public render() {
         return (
             <div className={"hp-activity-info-body " + this.props.className}>
-                <PropertyList
-                    properties={this.props.properties}
-                />
-                <div className="hp-activity-info-description">
-                    {this.props.children}
-                </div>
-                <PropertyList
-                    title="Past events:"
-                    properties={this.props.events}
-                />
+                <PropertyList properties={this.props.properties} />
+                <div className="hp-activity-info-description">{this.props.children}</div>
+                <PropertyList title="Past events:" properties={this.props.events} />
             </div>
         );
     }

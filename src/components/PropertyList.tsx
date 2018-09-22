@@ -17,9 +17,7 @@ export class PropertyList extends React.PureComponent<IPropertyListProps, {}> {
         return (
             <div className={classNames("hp-property-list", this.props.className)}>
                 <span className="hp-property-list-title">{this.props.title}</span>
-                <div className="hp-property-list-item">
-                    {this.props.properties.map(this.renderPropertyListItem)}
-                </div>
+                <div className="hp-property-list-item">{this.props.properties.map(this.renderPropertyListItem)}</div>
             </div>
         );
     }
@@ -31,5 +29,5 @@ export class PropertyList extends React.PureComponent<IPropertyListProps, {}> {
                 <span className="hp-property-list-item-value">{property.value}</span>
             </div>
         );
-    }
+    };
 }

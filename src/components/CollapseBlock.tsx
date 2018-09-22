@@ -13,28 +13,21 @@ export interface ICollapseBlockState {
 }
 
 export class CollapseBlock extends React.PureComponent<ICollapseBlockProps, ICollapseBlockState> {
-
     private IS_OPEN_INITIALLY_DEFAULT = false;
 
     public constructor(props: ICollapseBlockProps) {
         super(props);
-        const isOpenInitially = props.isOpenInitially == null
-            ? this.IS_OPEN_INITIALLY_DEFAULT
-            : props.isOpenInitially;
+        const isOpenInitially = props.isOpenInitially == null ? this.IS_OPEN_INITIALLY_DEFAULT : props.isOpenInitially;
         this.state = {
             isOpen: isOpenInitially,
         };
     }
 
     public render() {
-        const iconClasses = classNames(
-            "hp-collapse-block-toggle",
-            "bp3-icon-standard",
-            {
-                "bp3-icon-chevron-down": !this.state.isOpen,
-                "bp3-icon-chevron-up": this.state.isOpen,
-            },
-        );
+        const iconClasses = classNames("hp-collapse-block-toggle", "bp3-icon-standard", {
+            "bp3-icon-chevron-down": !this.state.isOpen,
+            "bp3-icon-chevron-up": this.state.isOpen,
+        });
         return (
             <div className={classNames("hp-collapse-block", "bp3-elevation-0", this.props.className)}>
                 <H5 className="hp-collapse-block-header" onClick={this.toggleCollapse}>
@@ -50,5 +43,5 @@ export class CollapseBlock extends React.PureComponent<ICollapseBlockProps, ICol
 
     private toggleCollapse = () => {
         this.setState({ isOpen: !this.state.isOpen });
-    }
+    };
 }

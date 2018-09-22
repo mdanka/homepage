@@ -193,20 +193,57 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                 <Section title="Projects">
                     <p className="hp-center">
                         <Box
-                            title="Momo Tabs"
+                            title="Momo Tabs (Work in Progress)"
                             description="Beautiful and lightweight guitar tabs and chord sheets."
                             language="en"
                             metadata="2018"
                             image={require("../assets/project-momotabs.png")}
                             href="https://momotabs.com"
                         />
+                    </p>
+                </Section>
+
+                <Section title="Teaching Projects">
+                    <p className="hp-center">
                         <Box
                             title="Tech Camp"
-                            description="Mentoring students to promote industrial programming with a purpose."
+                            description="Founder of a novel program to promote industrial programming with a purpose."
                             language="hu"
                             metadata="2016-present"
                             image={require("../assets/project-techtabor.png")}
                             href="http://techtabor.agondolkodasorome.hu/"
+                        />
+                        <Box
+                            title="Maths Camp"
+                            description="Lead teacher at The Joy of Thinking Foundation, teaching Maths using Lajos Pósa's Discovery Mathematics method."
+                            language="en"
+                            metadata="2012-2018"
+                            image={require("../assets/ago-logo.png")}
+                            href="http://agondolkodasorome.hu/en/"
+                        />
+                        <Box
+                            title="Discovery Mathematics @ Cambridge"
+                            description="Co-lecturer of a summer course, teaching Maths to non-mathematicians in a fun, interactive way."
+                            language="en"
+                            metadata="2011-2015"
+                            image={require("../assets/project-pkp.png")}
+                            href="http://www.pem.cam.ac.uk/international-programmes/pembroke-kings-programme/academics/courses/maths-workshop-the-art-of-discovery/"
+                        />
+                        <Box
+                            title="Lego Robotics @ Cambridge"
+                            description="Co-lecturer of a summer course, teaching programming and engineering via Lego robots."
+                            language="en"
+                            metadata="2015-2016"
+                            image={require("../assets/project-pkp.png")}
+                            href="http://www.pem.cam.ac.uk/international-programmes/pembroke-kings-programme/academics/courses/lego-robotics-workshop/"
+                        />
+                        <Box
+                            title="Supervisor @ Cambridge"
+                            description="Supervisor of multiple theoretical Computer Science subjects at Churchill College, including Algorithms, Quantum Computing, and Denotational Semantics."
+                            language="en"
+                            metadata="2012-2017"
+                            image={require("../assets/project-churchill.png")}
+                            href="https://www.chu.cam.ac.uk/"
                         />
                     </p>
                 </Section>

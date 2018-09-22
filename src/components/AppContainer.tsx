@@ -74,6 +74,27 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                     </p>
                 </Section>
 
+                <Section title="Events">
+                    <p className="hp-center">
+                        <Box
+                            title="Humans and Computers: Symbiosis or War?"
+                            description="Conference lecture and panel discussion with other experts."
+                            language="hu"
+                            metadata="2018 - HTE"
+                            image={require("../assets/event-hte-2018.png")}
+                            href="http://www.hte.hu/web/infokom2018"
+                        />
+                        <Box
+                            title="A Non-Technical Introduction to Bitcoin"
+                            description="Conference lecture for Hungary's large business leaders."
+                            language="hu"
+                            metadata="2018 - OTP Bank"
+                            image={require("../assets/event-otp-2018.jpg")}
+                            href="http://otpkonferencia.hu"
+                        />
+                    </p>
+                </Section>
+
                 <Section title="Talks">
                     <p className="hp-center">
                         <Box
@@ -86,7 +107,7 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                             title="A Non-Technical Introduction to Bitcoin"
                             description="There's enormous hype, but little practical value. What are its advantages and dangers?"
                             language="hu"
-                            metadata="2018 - OTP Bank"
+                            metadata="2018"
                             image={require("../assets/event-otp-2018.jpg")}
                             href="https://youtube.com/watch?v=0OBds6_nGZA"
                         />

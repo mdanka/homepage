@@ -1,7 +1,4 @@
 import * as React from "react";
-import { IContentTalk, TALKS } from "../content/talks";
-import { ActivityInfo } from "./ActivityInfo";
-import { CollapseBlock } from "./CollapseBlock";
 import { Overview } from "./Overview";
 import { Section } from "./Section";
 import { Box } from "./Box";
@@ -100,54 +97,94 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                             image={require("../assets/event-otp-2018.jpg")}
                             href="http://otpkonferencia.hu"
                         />
+                        <Box
+                            title="Building and Maintaining a Startup Culture"
+                            description="Talk on lessons from Palantir's growth from a startup to a multi-thousand-person company."
+                            language="en"
+                            metadata="2016 - Technion, Haifa, Israel"
+                            image={require("../assets/event-technion-2016.png")}
+                            href="https://technion.ac.il/en/technion-israel-institute-of-technology/"
+                        />
+                        <Box
+                            title="Future of Tech"
+                            description="Interview about the latest trends in technology, including big data and AI."
+                            language="hu"
+                            metadata="2015 - Nemzetközi Kör"
+                            image={require("../assets/event-nemzetkozi-kor-2015.jpg")}
+                            href="https://facebook.com/nemzetkozikor/"
+                        />
+                    </p>
+
+                    <p className="hp-center bp3-running-text bp3-text-large">
+                        Further events: Palantir Technologies, London, UK (2014); Churchill College, Cambridge, UK
+                        (2011); Pembroke College, Cambridge, UK (2013); MaMuT maths camp, Mátrafüred, Hungary
+                        (2010-present); Veres Péter Gimnázium, Budapest, Hungary (High School) (2012); Dürer
+                        Competition, Győr, Hungary (2014); Tech Camp, Budapest, Hungary (2016-present); Szent István
+                        Gimnázium (High School), Budapest, Hungary (2014).
                     </p>
                 </Section>
 
                 <Section title="Talks">
+                    <p className="hp-center bp3-running-text bp3-text-large">
+                        Miklós gives talks on a wide range of topics, including technological trends, big data, machine
+                        learning, UX design and product principles, mathematics, tech hiring, and business strategy. His
+                        talks are adapted to the audience, let them be youngsters, non-technical listeners, or technical
+                        and business experts.
+                    </p>
+
                     <p className="hp-center">
-                        <Box
-                            title="Humans and Computers: Symbiosis or War?"
-                            description="Will computers really replace humans? Or is there a different future awaiting?"
-                            metadata="2018 - HTE"
-                            image={require("../assets/event-hte-2018.png")}
-                        />
                         <Box
                             title="A Non-Technical Introduction to Bitcoin"
                             description="There's enormous hype, but little practical value. What are its advantages and dangers?"
                             language="hu"
                             metadata="2018"
-                            image={require("../assets/event-otp-2018.jpg")}
+                            image={require("../assets/talk-bitcoin-2018.jpg")}
                             href="https://youtube.com/watch?v=0OBds6_nGZA"
+                        />
+                        <Box
+                            title="Cyberwars - Tricks, Cons, and Fraud"
+                            description="The internet is the wildest of virtual battlefields, where criminals and computer
+                            scientists are fighting at every moment. Online safety, fraud, cons, tricks. Would you fall for them?"
+                        />
+                        <Box
+                            title="How to Conquer Mars? (SpaceX)"
+                            description="The whole of Earth is populated now by humans, but we didn't get far in space. What do we need in order to get to Mars - and then to conquer it?"
+                        />
+                        <Box
+                            title="Are You Smarter Than a Computer? (ML)"
+                            description="Artifical intelligence is not even close to humans at most tasks - but then why do we use a computer for an endless number of tasks? And most importantly: who's better at 20 Questions, you, or the computer?"
+                        />
+                        <Box
+                            title="Esoteric Programming Languages"
+                            description="While most programming languages are useful but not exceptionally fun... esoteric programming languages are exactly the opposite! In this practical session we'll get an overview via puzzles and prizes."
+                        />
+                        <Box
+                            title="User Experience Workshop"
+                            description="In this interactive workshop for beginners we go through visceral examples to build an intuition for what UX design means and how we can keep it as a first-order concern when building an application."
+                        />
+                        <Box
+                            title="Big Numbers"
+                            description="What is a big number? How large a number can you think of? Using sophisticated ideas we can open up new ranges that are far beyond our imagination - or the capabilities of computers!"
+                        />
+                        <Box
+                            title="Technology for a Purpose"
+                            description="Tech is frequently used to useless ends, but it can serve a purpose too. In this talk we will see how tech can help the disabled to write, the blind to see, and protect our society from terrorism and crime."
+                        />
+                        <Box
+                            title="Studying at Cambridge, UK"
+                            description="An overview of the British university system and the particularities and culture of Cambridge."
+                        />
+                        <Box
+                            title="Algorithmic Thinking in Maths Classes"
+                            description="Algorithmic thinking is a mindset that's particularly well-suited for teaching in Maths classes. I present a few highly fun problem sets which we solve together in this workshop."
                         />
                     </p>
                 </Section>
 
-                <Section title="Talks">
-                    <p className="bp3-running-text bp3-text-large">
-                        I give talks to all age groups on topics ranging from maths, technology and security to
-                        entrepreneurship and UX design.{" "}
-                        <a href="mailto:danka.miklos+homepage[AT]gmail.com">Contact me</a> if you're interested.
-                    </p>
-                    <div className="hp-app-talks-list">{TALKS.map(this.renderTalk)}</div>
-                    {/*<p className="bp3-running-text bp3-text-large">Past events:*/}
-                    {/*<ul>*/}
-                    {/*<li>2017: Esoteric Programming Languages @ Tech Camp, Budapest</li>*/}
-                    {/*<li>2016: Elon Musk - Conquering Mars @ MaMuT, Mátrafüred</li>*/}
-                    {/*<li>2014: Cyberwars @ Dürer competition, Miskolc</li>*/}
-                    {/*</ul>*/}
-                    {/*</p>*/}
-                </Section>
-
                 <Section title="Donations">
                     <p className="bp3-running-text bp3-text-large">
-                        Donating part of your income is{" "}
-                        <a href="http://totempaal.tj/2017/01/30/giving-to-charity.html" target="_blank">
-                            something you should be proud of
-                        </a>
-                        .
-                    </p>
-                    <p className="bp3-running-text bp3-text-large">
-                        I support the following charities and organisations:
+                        I donate part of my income to causes that personally matter to me. I support the following
+                        charities and organisations:
                         <ul>
                             <li>
                                 <a href="http://agondolkodasorome.hu" target="_blank">
@@ -201,11 +238,6 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                     </p>
                 </Section>
 
-                {/*<div className="">Future of Tech discussion panel</div>*/}
-                {/*<div className="">Iskola: tech for a purpose</div>*/}
-                {/*<div className="">Palantir and startups</div>*/}
-                {/*<div className="">UX workshop for beginners</div>*/}
-
                 {/*<div className="section section-projects">*/}
                 {/*<h3 className="section-header">Projects</h3>*/}
                 {/*<div className="">Preference Matrix</div>*/}
@@ -220,16 +252,6 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                 {/*<div className="">Egyetemválasztás - a gondolkodás öröme</div>*/}
                 {/*</div>*/}
             </div>
-        );
-    }
-
-    private renderTalk(talk: IContentTalk) {
-        return (
-            <CollapseBlock key={talk.title} title={talk.title}>
-                <ActivityInfo properties={talk.properties} events={talk.events}>
-                    {talk.description}
-                </ActivityInfo>
-            </CollapseBlock>
         );
     }
 }

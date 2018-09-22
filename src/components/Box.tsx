@@ -32,11 +32,10 @@ export class Box extends React.PureComponent<IBoxProps, IBoxState> {
                     )}
                 </div>
             );
+        const imageStyle = image === undefined ? {} : { backgroundImage: `url(${image})` };
         const boxContentElement = (
             <div className="hp-box-content-container">
-                {image != null && (
-                    <div className="hp-box-image-container" style={{ backgroundImage: `url(${image})` }} />
-                )}
+                <div className="hp-box-image-container" style={imageStyle} />
                 <div className="hp-box-content">
                     {metadataElement}
                     <div className="hp-box-title">{title}</div>

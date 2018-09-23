@@ -3,10 +3,16 @@
 
 @import "./components/index";
 
+*, *::before, *::after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
 html {
     background-color: white;
     width: 800px;
     margin: 0 auto;
+    box-sizing: border-box;
 }
   
 body {
@@ -16,8 +22,10 @@ body {
     margin: 0;
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 300;
+    font-size: 14px;
     text-transform: none;
     letter-spacing: 0;
+    line-height: 1.28581;
 }
   
 p {

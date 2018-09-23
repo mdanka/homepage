@@ -14,26 +14,12 @@ export interface IBoxState {}
 
 export class Box extends React.PureComponent<IBoxProps, IBoxState> {
     public render() {
-        const { title, href, description, language, image, metadata } = this.props;
-        const domain = this.getDomain(href);
-        const boxClassNames = classNames("hp-box", {
-            "hp-box-interactive": href !== undefined,
-        });
-        const metadataElement =
-            domain === undefined && metadata === undefined ? (
-                undefined
-            ) : (
-                <div className="hp-box-metadata">
-                    {metadata} {metadata && domain && " - "}
-                    {domain && <span className="hp-anchor">{domain}</span>}
-                </div>
-            );
-        const imageStyle = image === undefined ? {} : { backgroundImage: `url(${image})` };
+        const { title, href, description, language } = this.props;
         const boxContentElement = (
             <div key="box-content" className="hp-box-content-container">
-                <div className="hp-box-image-container" style={imageStyle} />
+                {this.renderImage()}
                 <div className="hp-box-content">
-                    {metadataElement}
+                    {this.renderMetadata()}
                     <div className="hp-box-title">{title}</div>
                     {description && <div className="hp-box-description">{description}</div>}
                 </div>
@@ -49,8 +35,30 @@ export class Box extends React.PureComponent<IBoxProps, IBoxState> {
                     {boxElements}
                 </a>
             );
+        const boxClassNames = classNames("hp-box", {
+            "hp-box-interactive": href !== undefined,
+        });
         return <div className={boxClassNames}>{boxContentWithLinkElements}</div>;
     }
+
+    private renderMetadata = () => {
+        const { href, metadata } = this.props;
+        const domain = this.getDomain(href);
+        return domain === undefined && metadata === undefined ? (
+            undefined
+        ) : (
+            <div className="hp-box-metadata">
+                {metadata} {metadata && domain && " - "}
+                {domain && <span className="hp-anchor">{domain}</span>}
+            </div>
+        );
+    };
+
+    private renderImage = () => {
+        const { image } = this.props;
+        const imageStyle = image === undefined ? {} : { backgroundImage: `url(${image})` };
+        return <div className="hp-box-image-container" style={imageStyle} />;
+    };
 
     private getDomain = (href: string | undefined) => {
         if (href === undefined) {

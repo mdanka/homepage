@@ -15,6 +15,11 @@
 @boxLanguageTop: 10px;
 @boxLanguageRight: @boxLanguageTop;
 
+@videoOverlaySize: @boxImageSize;
+@videoOverlayIconSize: 40px;
+@videoOverlayBackground: fade(#000000, 20%);
+@videoOverlayHoverBackground: fade(#000000, 40%);
+
 @boxMetadataFontSize: 12px;
 @boxMetadataLineHeight: 16px;
 @boxTitleFontSize: 16px;
@@ -63,6 +68,31 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.hp-box-video-overlay {
+  position: absolute;
+  top: (@boxImageSize - @videoOverlaySize) / 2;
+  left: (@boxImageSize - @videoOverlaySize) / 2;
+  min-width: @videoOverlaySize;
+  width: @videoOverlaySize;
+  height: @videoOverlaySize;
+
+  color: #eeeeee;
+  background-color: @videoOverlayBackground;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  span {
+    font-size: @videoOverlayIconSize;
+  }
+}
+
+&.hp-box-interactive:hover {
+  .hp-box-video-overlay {
+    background-color: @videoOverlayHoverBackground;
+  }
 }
 
 .hp-box-content {
@@ -153,6 +183,11 @@
   @boxLanguageTop: 7px;
   @boxLanguageRight: @boxLanguageTop;
 
+  @videoOverlaySize: @boxImageSize;
+  @videoOverlayIconSize: 32px;
+  @videoOverlayBackground: fade(#000000, 20%);
+  @videoOverlayHoverBackground: fade(#000000, 40%);
+
   @boxMetadataFontSize: 10px;
   @boxMetadataLineHeight: 12px;
   @boxTitleFontSize: 14px;
@@ -169,6 +204,18 @@
     min-width: @boxImageSize;
     width: @boxImageSize;
     height: @boxImageSize;
+  }
+
+  .hp-box-video-overlay {
+    top: (@boxImageSize - @videoOverlaySize) / 2;
+    left: (@boxImageSize - @videoOverlaySize) / 2;
+    min-width: @videoOverlaySize;
+    width: @videoOverlaySize;
+    height: @videoOverlaySize;
+
+      span {
+        font-size: @videoOverlayIconSize;
+      }
   }
 
   .hp-box-content {

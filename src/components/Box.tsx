@@ -18,6 +18,7 @@ export class Box extends React.PureComponent<IBoxProps, IBoxState> {
         const boxContentElement = (
             <div key="box-content" className="hp-box-content-container">
                 {this.renderImage()}
+                {this.renderVideoOverlay()}
                 <div className="hp-box-content">
                     {this.renderMetadata()}
                     <div className="hp-box-title">{title}</div>
@@ -58,6 +59,18 @@ export class Box extends React.PureComponent<IBoxProps, IBoxState> {
         const { image } = this.props;
         const imageStyle = image === undefined ? {} : { backgroundImage: `url(${image})` };
         return <div className="hp-box-image-container" style={imageStyle} />;
+    };
+
+    private renderVideoOverlay = () => {
+        const { href } = this.props;
+        if (href === undefined || href.indexOf("youtube.com") === -1) {
+            return null;
+        }
+        return (
+            <div className="hp-box-video-overlay">
+                <span className="bp3-icon-standard bp3-icon-play" />
+            </div>
+        );
     };
 
     private getDomain = (href: string | undefined) => {

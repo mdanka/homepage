@@ -34,13 +34,17 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                         <a href="mailto:danka.miklos+homepage[AT]gmail.com">here</a>.
                     </p>
 
-                    <p className="bp3-running-text bp3-text-large">
-                        Jump to: <a href={`#${SectionTitles.ARTICLES}`}>{SectionTitles.ARTICLES}</a> ·{" "}
-                        <a href={`#${SectionTitles.EVENTS}`}>{SectionTitles.EVENTS}</a> ·{" "}
-                        <a href={`#${SectionTitles.TALKS}`}>{SectionTitles.TALKS}</a> ·{" "}
-                        <a href={`#${SectionTitles.PROJECTS}`}>{SectionTitles.PROJECTS}</a> ·{" "}
-                        <a href={`#${SectionTitles.TEACHING}`}>{SectionTitles.TEACHING}</a> ·{" "}
-                        <a href={`#${SectionTitles.DONATIONS}`}>{SectionTitles.DONATIONS}</a>
+                    <p className="hp-center bp3-running-text bp3-text-large">
+                        Jump to:
+                        <br />
+                        <span>
+                            <a href={`#${SectionTitles.ARTICLES}`}>{SectionTitles.ARTICLES}</a> ·{" "}
+                            <a href={`#${SectionTitles.EVENTS}`}>{SectionTitles.EVENTS}</a> ·{" "}
+                            <a href={`#${SectionTitles.TALKS}`}>{SectionTitles.TALKS}</a> ·{" "}
+                            <a href={`#${SectionTitles.PROJECTS}`}>{SectionTitles.PROJECTS}</a> ·{" "}
+                            <a href={`#${SectionTitles.TEACHING}`}>{SectionTitles.TEACHING}</a> ·{" "}
+                            <a href={`#${SectionTitles.DONATIONS}`}>{SectionTitles.DONATIONS}</a>
+                        </span>
                     </p>
                 </Section>
 

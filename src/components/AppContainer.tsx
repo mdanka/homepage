@@ -271,7 +271,7 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                             title="Supervisor @ Cambridge"
                             description="Supervisor of multiple theoretical Computer Science subjects at Churchill College, including Algorithms, Quantum Computing, and Denotational Semantics."
                             language="en"
-                            metadata="2012-2017"
+                            metadata="2012-2015"
                             image={require("../assets/boxImages/project-churchill.png")}
                             href="https://chu.cam.ac.uk/"
                         />

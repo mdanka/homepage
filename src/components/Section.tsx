@@ -16,7 +16,9 @@ export class Section extends React.PureComponent<ISectionProps, {}> {
             <div className={classNames("hp-section", className)}>
                 {title && (
                     <H3 id={`${title}`} className="hp-section-header">
-                        {title}
+                        <span className="hp-section-header-title-line" />
+                        <span className="hp-section-header-title-text">{title}</span>
+                        <span className="hp-section-header-title-line" />
                     </H3>
                 )}
                 {descriptionElement}

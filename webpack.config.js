@@ -6,6 +6,7 @@ const autoprefixer = require("autoprefixer");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const WebpackBuildNotifierPlugin = require('webpack-build-notifier');
+var webpack = require('webpack');
 
 const staticFileRegex = /\.(woff|svg|ttf|eot|gif|jpeg|jpg|png)([\?]?.*)$/;
 
@@ -109,6 +110,7 @@ module.exports = {
         }),
         new WebpackBuildNotifierPlugin({
             title: "Miklós Danka Build",
-        })
+        }),
+        new webpack.optimize.UglifyJsPlugin()
     ],
 }

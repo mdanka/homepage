@@ -1,5 +1,7 @@
 import * as React from "react";
 import * as classNames from "classnames";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPlay } from "@fortawesome/free-solid-svg-icons";
 
 export interface IBoxProps {
     title: string;
@@ -68,7 +70,7 @@ export class Box extends React.PureComponent<IBoxProps, IBoxState> {
         }
         return (
             <div className="hp-box-video-overlay">
-                <span className="bp3-icon-standard bp3-icon-play" />
+                <FontAwesomeIcon className="hp-box-video-overlay-icon" icon={faPlay} />
             </div>
         );
     };

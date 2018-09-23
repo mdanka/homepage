@@ -18,7 +18,9 @@
     "watch:server": "webpack-dev-server -d --config webpack.config.server.js"
   },
   "dependencies": {
-    "@blueprintjs/icons": "^3.1.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.4",
+    "@fortawesome/free-solid-svg-icons": "^5.3.1",
+    "@fortawesome/react-fontawesome": "^0.1.3",
     "classnames": "^2.2.5",
     "es6-shim": "^0.35.3",
     "lodash": "^4.2.0",

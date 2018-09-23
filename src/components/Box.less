@@ -16,7 +16,7 @@
 @boxLanguageRight: @boxLanguageTop;
 
 @videoOverlaySize: @boxImageSize;
-@videoOverlayIconSize: 40px;
+@videoOverlayIconSize: 32px;
 @videoOverlayBackground: fade(#000000, 20%);
 @videoOverlayHoverBackground: fade(#000000, 40%);
 
@@ -83,10 +83,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
 
-  span {
-    font-size: @videoOverlayIconSize;
-  }
+.hp-box-video-overlay-icon {
+  font-size: @videoOverlayIconSize;
 }
 
 &.hp-box-interactive:hover {
@@ -184,7 +184,7 @@
   @boxLanguageRight: @boxLanguageTop;
 
   @videoOverlaySize: @boxImageSize;
-  @videoOverlayIconSize: 32px;
+  @videoOverlayIconSize: 22px;
   @videoOverlayBackground: fade(#000000, 20%);
   @videoOverlayHoverBackground: fade(#000000, 40%);
 
@@ -212,10 +212,10 @@
     min-width: @videoOverlaySize;
     width: @videoOverlaySize;
     height: @videoOverlaySize;
+  }
 
-      span {
-        font-size: @videoOverlayIconSize;
-      }
+  .hp-box-video-overlay-icon {
+    font-size: @videoOverlayIconSize;
   }
 
   .hp-box-content {

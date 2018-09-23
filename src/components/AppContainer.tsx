@@ -145,7 +145,7 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                         />
                     </div>
 
-                    <p className="hp-center bp3-running-text bp3-text-large">
+                    <p className="hp-center bp3-running-text">
                         Further events: Palantir Technologies, London, UK (2014); Churchill College, Cambridge, UK
                         (2011); Pembroke College, Cambridge, UK (2013); MaMuT maths camp, Mátrafüred, Hungary
                         (2010-present); Veres Péter Gimnázium, Budapest, Hungary (High School) (2012); Dürer

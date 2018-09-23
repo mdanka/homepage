@@ -15,7 +15,7 @@ export class Section extends React.PureComponent<ISectionProps, {}> {
         return (
             <div className={classNames("hp-section", className)}>
                 {title && (
-                    <H3 id={`id-section-header-${title}`} className="hp-section-header">
+                    <H3 id={`${title}`} className="hp-section-header">
                         {title}
                     </H3>
                 )}

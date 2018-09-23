@@ -5,6 +5,15 @@ import { Box } from "./Box";
 
 const profileImage = require("../assets/mdanka-profile.png");
 
+enum SectionTitles {
+    ARTICLES = "Articles and Interviews",
+    EVENTS = "Events",
+    TALKS = "Talks",
+    PROJECTS = "Projects",
+    TEACHING = "Teaching",
+    DONATIONS = "Donations",
+}
+
 export class AppContainer extends React.PureComponent<{}, {}> {
     public render() {
         return (
@@ -26,15 +35,16 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                     </p>
 
                     <p className="bp3-running-text bp3-text-large">
-                        Jump to: <a href="#id-section-header-Articles">Articles</a> ·{" "}
-                        <a href="#id-section-header-Events">Events</a> · <a href="#id-section-header-Talks">Talks</a> ·{" "}
-                        <a href="#id-section-header-Projects">Projects</a> ·{" "}
-                        <a href="#id-section-header-Teaching">Teaching</a> ·{" "}
-                        <a href="#id-section-header-Donations">Donations</a>
+                        Jump to: <a href={`#${SectionTitles.ARTICLES}`}>{SectionTitles.ARTICLES}</a> ·{" "}
+                        <a href={`#${SectionTitles.EVENTS}`}>{SectionTitles.EVENTS}</a> ·{" "}
+                        <a href={`#${SectionTitles.TALKS}`}>{SectionTitles.TALKS}</a> ·{" "}
+                        <a href={`#${SectionTitles.PROJECTS}`}>{SectionTitles.PROJECTS}</a> ·{" "}
+                        <a href={`#${SectionTitles.TEACHING}`}>{SectionTitles.TEACHING}</a> ·{" "}
+                        <a href={`#${SectionTitles.DONATIONS}`}>{SectionTitles.DONATIONS}</a>
                     </p>
                 </Section>
 
-                <Section title="Articles">
+                <Section title={SectionTitles.ARTICLES}>
                     <div className="hp-center hp-content-paragraph">
                         <Box
                             title="Humans and Computers: Symbiosis or War?"
@@ -69,6 +79,14 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                             href="http://agondolkodasorome.hu/fb/danka-miklos-egyetemvalasztas-maskent/"
                         />
                         <Box
+                            title="Interview: Hungarian Education"
+                            description="Live TV interview about the day-to-day effects of the Hungarian government's education policies. Interview."
+                            language="hu"
+                            metadata="2014"
+                            image={require("../assets/interview-egyenes-beszed-2014.png")}
+                            href="https://youtube.com/watch?v=5KcSgeI2Lp0"
+                        />
+                        <Box
                             title="Hungarian Education & Olympiads"
                             description="The Hungarian government's false praises to students are hypocritical given their education policies. Opinion piece."
                             language="hu"
@@ -79,7 +97,7 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                     </div>
                 </Section>
 
-                <Section title="Events">
+                <Section title={SectionTitles.EVENTS}>
                     <div className="hp-center hp-content-paragraph">
                         <Box
                             title="Humans and Computers: Symbiosis or War?"
@@ -132,7 +150,7 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                     </p>
                 </Section>
 
-                <Section title="Talks">
+                <Section title={SectionTitles.TALKS}>
                     <p className="hp-center bp3-running-text bp3-text-large">
                         Miklós gives talks on a wide range of topics, including technological trends, big data, machine
                         learning, UX design and product principles, mathematics, tech hiring, and business strategy. His
@@ -198,7 +216,7 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                     </div>
                 </Section>
 
-                <Section title="Projects">
+                <Section title={SectionTitles.PROJECTS}>
                     <div className="hp-center hp-content-paragraph">
                         <Box
                             title="Momo Tabs (Work in Progress)"
@@ -211,7 +229,7 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                     </div>
                 </Section>
 
-                <Section title="Teaching">
+                <Section title={SectionTitles.TEACHING}>
                     <div className="hp-center hp-content-paragraph">
                         <Box
                             title="Tech Camp"
@@ -256,7 +274,7 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                     </div>
                 </Section>
 
-                <Section title="Donations">
+                <Section title={SectionTitles.DONATIONS}>
                     <p className="bp3-running-text bp3-text-large">
                         I donate part of my income to causes that personally matter to me. I support the following
                         charities and organisations:

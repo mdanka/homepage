@@ -34,7 +34,7 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                         <a href="mailto:danka.miklos+homepage[AT]gmail.com">here</a>.
                     </p>
 
-                    <p className="hp-center hp-content-paragraph hp-content-paragraph-full-width">
+                    <p className="hp-table-of-contents hp-center hp-content-paragraph hp-content-paragraph-full-width">
                         Jump to:
                         <br />
                         <span className="hp-table-of-contents-links">

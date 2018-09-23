@@ -21,7 +21,7 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                 <Overview />
 
                 <Section>
-                    <p className="bp3-running-text bp3-text-large">
+                    <p className="hp-content-paragraph bp3-running-text bp3-text-large">
                         <img src={profileImage} className="hp-image-inline hp-image-left" />
                         Miklós is a software engineer, product manager, hiring manager, teacher, and public speaker. He
                         enjoys making friendly and easy-to-use software products, and making hard topics like
@@ -29,12 +29,12 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                         background, or expertise.
                     </p>
 
-                    <p className="bp3-running-text bp3-text-large">
+                    <p className="hp-content-paragraph bp3-running-text bp3-text-large">
                         If you'd like to invite Miklós to speak at an event, please reach out{" "}
                         <a href="mailto:danka.miklos+homepage[AT]gmail.com">here</a>.
                     </p>
 
-                    <p className="hp-center bp3-running-text bp3-text-large">
+                    <p className="hp-center hp-content-paragraph hp-content-paragraph-full-width bp3-running-text bp3-text-large">
                         Jump to:
                         <br />
                         <span>

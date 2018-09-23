@@ -21,7 +21,7 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                 <Overview />
 
                 <Section>
-                    <p className="hp-content-paragraph bp3-running-text bp3-text-large">
+                    <p className="hp-content-paragraph">
                         <img src={profileImage} className="hp-image-inline hp-image-left" />
                         Miklós is a software engineer, product manager, hiring manager, teacher, and public speaker. He
                         enjoys making friendly and easy-to-use software products, and making hard topics like
@@ -29,12 +29,12 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                         background, or expertise.
                     </p>
 
-                    <p className="hp-content-paragraph bp3-running-text bp3-text-large">
+                    <p className="hp-content-paragraph">
                         If you'd like to invite Miklós to speak at an event, please reach out{" "}
                         <a href="mailto:danka.miklos+homepage[AT]gmail.com">here</a>.
                     </p>
 
-                    <p className="hp-center hp-content-paragraph hp-content-paragraph-full-width bp3-running-text bp3-text-large">
+                    <p className="hp-center hp-content-paragraph hp-content-paragraph-full-width">
                         Jump to:
                         <br />
                         <span>
@@ -145,7 +145,7 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                         />
                     </div>
 
-                    <p className="hp-center bp3-running-text">
+                    <p className="hp-center hp-content-paragraph hp-content-paragraph-small">
                         Further events: Palantir Technologies, London, UK (2014); Churchill College, Cambridge, UK
                         (2011); Pembroke College, Cambridge, UK (2013); MaMuT maths camp, Mátrafüred, Hungary
                         (2010-present); Veres Péter Gimnázium, Budapest, Hungary (High School) (2012); Dürer
@@ -155,7 +155,7 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                 </Section>
 
                 <Section title={SectionTitles.TALKS}>
-                    <p className="hp-center bp3-running-text bp3-text-large">
+                    <p className="hp-center hp-content-paragraph">
                         Miklós gives talks on a wide range of topics, including technological trends, big data, machine
                         learning, UX design and product principles, mathematics, tech hiring, and business strategy. His
                         talks are adapted to the audience, let them be youngsters, non-technical listeners, or technical
@@ -279,11 +279,11 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                 </Section>
 
                 <Section title={SectionTitles.DONATIONS}>
-                    <p className="bp3-running-text bp3-text-large">
+                    <p className="hp-content-paragraph">
                         I donate part of my income to causes that personally matter to me. I support the following
                         charities and organisations:
                     </p>
-                    <div className="hp-content-paragraph bp3-running-text bp3-text-large">
+                    <div className="hp-content-paragraph">
                         <ul>
                             <li>
                                 <a href="http://agondolkodasorome.hu" target="_blank">
@@ -336,20 +336,6 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                         </ul>
                     </div>
                 </Section>
-
-                {/*<div className="section section-projects">*/}
-                {/*<h3 className="section-header">Projects</h3>*/}
-                {/*<div className="">Preference Matrix</div>*/}
-                {/*</div>*/}
-                {/*<div className="section section-teaching">*/}
-                {/*<div className="">Tech Camp</div>*/}
-                {/*<div className="">Maths Camp</div>*/}
-                {/*</div>*/}
-                {/*<div className="section section-writings">*/}
-                {/*<div className="">Diákolimpikonok videó és cikk</div>*/}
-                {/*<div className="">Hiring</div>*/}
-                {/*<div className="">Egyetemválasztás - a gondolkodás öröme</div>*/}
-                {/*</div>*/}
             </div>
         );
     }

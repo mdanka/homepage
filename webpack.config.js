@@ -2,6 +2,8 @@
 
 var path = require('path');
 
+const webpack = require("webpack");
+
 const autoprefixer = require("autoprefixer");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
@@ -23,83 +25,61 @@ module.exports = {
     },
     resolve: {
         // Add `.ts` and `.tsx` as a resolvable extension.
-        extensions: ['', '.webpack.js', '.web.js', '.ts', '.tsx', '.js'],
+        extensions: ['.webpack.js', '.web.js', '.ts', '.tsx', '.js'],
     },
     module: {
-        preLoaders: [
+        rules: [
             {
                 test: /\.js$/,
+                enforce: "pre",
                 loader: "source-map-loader",
                 exclude: /node_modules/,
             },
-        ],
-        loaders: [
             {
                 test: /\.tsx?$/,
                 loader: 'ts-loader',
                 exclude: /node_modules/,
             },
             {
-                test: /\.css$/,
-                loader: ExtractTextPlugin.extract(
-                    "style",
-                    [
-                        "css?sourceMap",
-                        "postcss",
-                    ],
-                    {
-                        publicPath: "", // Don't add public path to url()
-                    }
-                ),
-            },
-            {
                 test: /\.less$/,
-                loader: ExtractTextPlugin.extract(
-                    "style",
-                    [
-                        "css?sourceMap",
-                        "postcss",
-                        "less?sourceMap",
-                    ],
-                    {
-                        publicPath: "", // Don't add public path to url()
-                    }
-                ),
+                use: [{
+                    loader: 'style-loader' // creates style nodes from JS strings
+                }, {
+                    loader: 'css-loader' // translates CSS into CommonJS
+                }, {
+                    loader: 'less-loader' // compiles Less to CSS
+                }],
+                exclude: /node_modules/,
             },
             {
                 test: staticFileRegex,
                 include: [
                     path.resolve(__dirname, "node_modules"),
                 ],
-                loader: "file-loader",
-                query: {
-                    name: "[path][name].[ext]",
-                },
+                use: [
+                    {
+                        loader: "file-loader",
+                        options: {
+                            name: "[path][name].[ext]",
+                        },
+                    }
+                ]
             },
             {
                 test: staticFileRegex,
                 include: path.resolve(__dirname, "src"),
-                loader: "file-loader",
-                query: {
-                    name: "[name]-[hash].[ext]",
-                },
+                use: [
+                    {
+                        loader: "file-loader",
+                        options: {
+                            name: "[name]-[hash].[ext]",
+                        },
+                    }
+                ]
             },
         ],
     },
-    postcss: () => {
-        return [
-            autoprefixer({
-                browsers: [
-                    "> 1%",
-                    "last 2 versions",
-                    "Firefox ESR",
-                    "Opera 12.1",
-                ],
-            }),
-        ];
-    },
     plugins: [
-        new ExtractTextPlugin("[name].css"),
         new HtmlWebpackPlugin({
             minify: {
                 collapseWhitespace: true,
@@ -109,6 +89,23 @@ module.exports = {
         }),
         new WebpackBuildNotifierPlugin({
             title: "Miklós Danka Build",
+        }),
+        new webpack.LoaderOptionsPlugin({
+            // test: /\.xxx$/, // may apply this only for some modules
+            options: {
+                postcss: () => {
+                    return [
+                        autoprefixer({
+                            browsers: [
+                                "> 1%",
+                                "last 2 versions",
+                                "Firefox ESR",
+                                "Opera 12.1",
+                            ],
+                        }),
+                    ];
+                }
+            }
         })
     ],
 }

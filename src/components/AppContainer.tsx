@@ -3,7 +3,7 @@ import { Overview } from "./Overview";
 import { Section } from "./Section";
 import { Box } from "./Box";
 
-const profileImage = require("../assets/mdanka-profile.png");
+const profileImage = require("../assets/boxImages/mdanka-profile.png");
 
 enum SectionTitles {
     ARTICLES = "Articles & Interviews",
@@ -55,7 +55,7 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                             description="Will computers really replace humans? Or is there a different future awaiting?"
                             language="hu"
                             metadata="2018"
-                            image={require("../assets/article-qubit-human-computer-symbiosis.png")}
+                            image={require("../assets/boxImages/article-qubit-human-computer-symbiosis.png")}
                             href="https://qubit.hu/2018/06/05/ember-es-gep-szimbiozis-vagy-haboru"
                         />
                         <Box
@@ -63,7 +63,7 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                             description="There's enormous hype, but little practical value. Is it wise to invest in Bitcoin?"
                             language="hu"
                             metadata="2018"
-                            image={require("../assets/article-qubit-crypto.jpeg")}
+                            image={require("../assets/boxImages/article-qubit-crypto.jpeg")}
                             href="https://qubit.hu/2018/02/13/a-kriptovalutak-arnyoldala-miert-ne-fektess-bitcoinba"
                         />
                         <Box
@@ -71,7 +71,7 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                             description="Discussions around universities tend to be dominated by subject quality, while we undervalue elements like culture, mindset, and opportunities."
                             language="en"
                             metadata="2016"
-                            image={require("../assets/article-ago-university.png")}
+                            image={require("../assets/boxImages/article-ago-university.png")}
                             href="http://blog.miklosdanka.com/choosing-universities-an-alternative-way"
                         />
                         <Box
@@ -79,7 +79,7 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                             description="Az egyetemválasztáskor szinte mindig csak a tárgy minőségét vesszük figyelembe, alulértékelve a kultúrát, a gondolkodásmódot, és a lehetőségeket."
                             language="hu"
                             metadata="2016"
-                            image={require("../assets/ago-logo.png")}
+                            image={require("../assets/boxImages/ago-logo.png")}
                             href="http://agondolkodasorome.hu/fb/danka-miklos-egyetemvalasztas-maskent/"
                         />
                         <Box
@@ -87,7 +87,7 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                             description="Live TV interview about the day-to-day effects of the Hungarian government's education policies. Interview."
                             language="hu"
                             metadata="2014"
-                            image={require("../assets/interview-egyenes-beszed-2014.png")}
+                            image={require("../assets/boxImages/interview-egyenes-beszed-2014.png")}
                             href="https://youtube.com/watch?v=5KcSgeI2Lp0"
                         />
                         <Box
@@ -95,7 +95,7 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                             description="The Hungarian government's false praises to students are hypocritical given their education policies. Opinion piece."
                             language="hu"
                             metadata="2014"
-                            image={require("../assets/article-atlatszo-oktatas.png")}
+                            image={require("../assets/boxImages/article-atlatszo-oktatas.png")}
                             href="https://atlatszooktatas.blog.hu/2014/01/28/_ide_aztan_mindenkinek_lesz_kedve_hazajonni_egy_tanar_a_diakolimpiai_dijkiosztorol"
                         />
                     </div>
@@ -108,7 +108,7 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                             description="Conference lecture and panel discussion with other experts."
                             language="hu"
                             metadata="2018 - HTE"
-                            image={require("../assets/event-hte-2018.png")}
+                            image={require("../assets/boxImages/event-hte-2018.png")}
                             href="http://hte.hu/web/infokom2018"
                         />
                         <Box
@@ -116,7 +116,7 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                             description="Conference lecture to teachers on bringing algorithmic thinking to Maths classes."
                             language="hu"
                             metadata="2018 - Rátz László Vándorgyűlés"
-                            image={require("../assets/event-ratz-2018.png")}
+                            image={require("../assets/boxImages/event-ratz-2018.png")}
                             href="http://ratz.krudy.gyor.hu/index.php/programok/csutortok"
                         />
                         <Box
@@ -124,7 +124,7 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                             description="Conference lecture for Hungary's large business leaders."
                             language="hu"
                             metadata="2018 - OTP Bank"
-                            image={require("../assets/event-otp-2018.jpg")}
+                            image={require("../assets/boxImages/event-otp-2018.jpg")}
                             href="http://otpkonferencia.hu"
                         />
                         <Box
@@ -132,7 +132,7 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                             description="Talk on lessons from Palantir's growth from a startup to a multi-thousand-person company."
                             language="en"
                             metadata="2016 - Technion, Haifa, Israel"
-                            image={require("../assets/event-technion-2016.png")}
+                            image={require("../assets/boxImages/event-technion-2016.png")}
                             href="https://technion.ac.il/en/technion-israel-institute-of-technology/"
                         />
                         <Box
@@ -140,7 +140,7 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                             description="Interview about the latest trends in technology, including big data and AI."
                             language="hu"
                             metadata="2015 - Nemzetközi Kör"
-                            image={require("../assets/event-nemzetkozi-kor-2015.jpg")}
+                            image={require("../assets/boxImages/event-nemzetkozi-kor-2015.jpg")}
                             href="https://facebook.com/nemzetkozikor/"
                         />
                     </div>
@@ -168,54 +168,54 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                             description="There's enormous hype, but little practical value. What are its advantages and dangers?"
                             language="hu"
                             metadata="2018"
-                            image={require("../assets/talk-bitcoin-2018.jpg")}
+                            image={require("../assets/boxImages/talk-bitcoin-2018.jpg")}
                             href="https://youtube.com/watch?v=0OBds6_nGZA"
                         />
                         <Box
                             title="Cyberwars - Tricks, Cons, and Fraud"
                             description="The internet is the wildest of virtual battlefields, where criminals and computer
                             scientists are fighting at every moment. Online safety, fraud, cons, tricks. Would you fall for them?"
-                            image={require("../assets/talk-cyberwars.png")}
+                            image={require("../assets/boxImages/talk-cyberwars.png")}
                         />
                         <Box
                             title="How to Conquer Mars? (SpaceX)"
                             description="The whole of Earth is populated now by humans, but we didn't get far in space. What do we need in order to get to Mars - and then to conquer it?"
-                            image={require("../assets/talk-spacex.jpg")}
+                            image={require("../assets/boxImages/talk-spacex.jpg")}
                         />
                         <Box
                             title="Are You Smarter Than a Computer? (ML)"
                             description="Artifical intelligence is not even close to humans at most tasks - but then why do we use a computer for an endless number of tasks? And most importantly: who's better at 20 Questions, you, or the computer?"
-                            image={require("../assets/talk-ml.png")}
+                            image={require("../assets/boxImages/talk-ml.png")}
                         />
                         <Box
                             title="Esoteric Programming Languages"
                             description="While most programming languages are useful but not exceptionally fun... esoteric programming languages are exactly the opposite! In this practical session we'll get an overview via puzzles and prizes."
-                            image={require("../assets/talk-esoteric.png")}
+                            image={require("../assets/boxImages/talk-esoteric.png")}
                         />
                         <Box
                             title="User Experience Workshop"
                             description="In this interactive workshop for beginners we go through visceral examples to build an intuition for what UX design means and how we can keep it as a first-order concern when building an application."
-                            image={require("../assets/talk-ux.jpg")}
+                            image={require("../assets/boxImages/talk-ux.jpg")}
                         />
                         <Box
                             title="Big Numbers"
                             description="What is a big number? How large a number can you think of? Using sophisticated ideas we can open up new ranges that are far beyond our imagination - or the capabilities of computers!"
-                            image={require("../assets/talk-big-numbers.jpg")}
+                            image={require("../assets/boxImages/talk-big-numbers.jpg")}
                         />
                         <Box
                             title="Technology for a Purpose"
                             description="Tech is frequently used to useless ends, but it can serve a purpose too. In this talk we will see how tech can help the disabled to write, the blind to see, and protect our society from terrorism and crime."
-                            image={require("../assets/talk-tech-purpose.png")}
+                            image={require("../assets/boxImages/talk-tech-purpose.png")}
                         />
                         <Box
                             title="Studying at Cambridge, UK"
                             description="An overview of the British university system and the particularities and culture of Cambridge."
-                            image={require("../assets/talk-cambridge.jpg")}
+                            image={require("../assets/boxImages/talk-cambridge.jpg")}
                         />
                         <Box
                             title="Algorithmic Thinking in Maths Classes"
                             description="Algorithmic thinking is a mindset that's particularly well-suited for teaching in Maths classes. I present a few highly fun problem sets which we solve together in this workshop."
-                            image={require("../assets/talk-algorithm-teaching.png")}
+                            image={require("../assets/boxImages/talk-algorithm-teaching.png")}
                         />
                     </div>
                 </Section>
@@ -227,7 +227,7 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                             description="Beautiful and lightweight guitar tabs and chord sheets."
                             language="en"
                             metadata="2018"
-                            image={require("../assets/project-momotabs.png")}
+                            image={require("../assets/boxImages/project-momotabs.png")}
                             href="https://momotabs.com"
                         />
                     </div>
@@ -240,7 +240,7 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                             description="Founder of a novel program to promote industrial programming with a purpose."
                             language="hu"
                             metadata="2016-present"
-                            image={require("../assets/project-techtabor.png")}
+                            image={require("../assets/boxImages/project-techtabor.png")}
                             href="http://techtabor.agondolkodasorome.hu/"
                         />
                         <Box
@@ -248,7 +248,7 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                             description="Lead teacher at The Joy of Thinking Foundation, teaching Maths using Lajos Pósa's Discovery Mathematics method."
                             language="en"
                             metadata="2012-2018"
-                            image={require("../assets/ago-logo.png")}
+                            image={require("../assets/boxImages/ago-logo.png")}
                             href="http://agondolkodasorome.hu/en/"
                         />
                         <Box
@@ -256,7 +256,7 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                             description="Co-lecturer of a summer course, teaching Maths to non-mathematicians in a fun, interactive way."
                             language="en"
                             metadata="2011-2015"
-                            image={require("../assets/project-pkp.png")}
+                            image={require("../assets/boxImages/project-pkp.png")}
                             href="http://www.pem.cam.ac.uk/international-programmes/pembroke-kings-programme/academics/courses/maths-workshop-the-art-of-discovery/"
                         />
                         <Box
@@ -264,7 +264,7 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                             description="Co-lecturer of a summer course, teaching programming and engineering via Lego robots."
                             language="en"
                             metadata="2015-2016"
-                            image={require("../assets/project-pkp.png")}
+                            image={require("../assets/boxImages/project-pkp.png")}
                             href="http://www.pem.cam.ac.uk/international-programmes/pembroke-kings-programme/academics/courses/lego-robotics-workshop/"
                         />
                         <Box
@@ -272,7 +272,7 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                             description="Supervisor of multiple theoretical Computer Science subjects at Churchill College, including Algorithms, Quantum Computing, and Denotational Semantics."
                             language="en"
                             metadata="2012-2017"
-                            image={require("../assets/project-churchill.png")}
+                            image={require("../assets/boxImages/project-churchill.png")}
                             href="https://chu.cam.ac.uk/"
                         />
                     </div>

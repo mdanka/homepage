@@ -6,7 +6,7 @@ import { Box } from "./Box";
 const profileImage = require("../assets/mdanka-profile.png");
 
 enum SectionTitles {
-    ARTICLES = "Articles and Interviews",
+    ARTICLES = "Articles & Interviews",
     EVENTS = "Events",
     TALKS = "Talks",
     PROJECTS = "Projects",

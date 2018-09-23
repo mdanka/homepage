@@ -12,6 +12,7 @@ const WebpackBuildNotifierPlugin = require('webpack-build-notifier');
 const staticFileRegex = /\.(woff|svg|ttf|eot|gif|jpeg|jpg|png)([\?]?.*)$/;
 
 module.exports = {
+    mode: 'production',
     entry: {
         app: [
             path.resolve(__dirname, "src/app.tsx"),
@@ -108,4 +109,9 @@ module.exports = {
             }
         })
     ],
+    optimization: {
+        splitChunks: {
+            chunks: 'all'
+        }
+    }
 }

@@ -37,7 +37,7 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                     <p className="hp-center hp-content-paragraph hp-content-paragraph-full-width">
                         Jump to:
                         <br />
-                        <span>
+                        <span className="hp-table-of-contents-links">
                             <a href={`#${SectionTitles.ARTICLES}`}>{SectionTitles.ARTICLES}</a> ·{" "}
                             <a href={`#${SectionTitles.EVENTS}`}>{SectionTitles.EVENTS}</a> ·{" "}
                             <a href={`#${SectionTitles.TALKS}`}>{SectionTitles.TALKS}</a> ·{" "}

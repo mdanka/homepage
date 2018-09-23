@@ -6,11 +6,26 @@
 
 .hp-section-header {
   color: @mainColour;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
+  // border-bottom-style: solid;
+  // border-bottom-width: 2px;
   border-color: @mainColour;
   margin-bottom: 0.5em;
   padding-bottom: 0.25em;
+  
+  // font-weight: normal;
+
+  display: flex;
+  width: 100%;
+}
+
+.hp-section-header-title-line {
+  flex-grow: 1;
+  border-bottom: 2px solid #DDD;
+  margin: 0 0 10px 0;
+}
+
+.hp-section-header-title-text {
+  margin: 0 20px;
 }
 
 .hp-section-description {

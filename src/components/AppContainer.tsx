@@ -280,8 +280,8 @@ export class AppContainer extends React.PureComponent<{}, {}> {
 
                 <Section title={SectionTitles.DONATIONS}>
                     <p className="hp-content-paragraph">
-                        I donate part of my income to causes that personally matter to me. I support the following
-                        charities and organisations:
+                        Miklós donates part of his income to causes that personally matter to him. He supports the
+                        following charities and organisations:
                     </p>
                     <div className="hp-content-paragraph">
                         <ul>

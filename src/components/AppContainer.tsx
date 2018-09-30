@@ -230,6 +230,14 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                             image={require("../assets/boxImages/project-momotabs.png")}
                             href="https://momotabs.com"
                         />
+                        <Box
+                            title="Momo Chords"
+                            description="TypeScript library for parsing and naming chords."
+                            language="en"
+                            metadata="2018"
+                            image={require("../assets/boxImages/project-momochords.png")}
+                            href="https://github.com/mdanka/momo-chords"
+                        />
                     </div>
                 </Section>
 

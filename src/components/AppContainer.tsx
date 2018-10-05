@@ -232,11 +232,11 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                         />
                         <Box
                             title="Momo Chords"
-                            description="TypeScript library for parsing and naming chords."
+                            description="Library for parsing and naming chords."
                             language="en"
                             metadata="2018"
                             image={require("../assets/boxImages/project-momochords.png")}
-                            href="https://github.com/mdanka/momo-chords"
+                            href="https://momo-chords.miklosdanka.com"
                         />
                     </div>
                 </Section>

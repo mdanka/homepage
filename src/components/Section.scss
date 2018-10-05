@@ -1,14 +1,14 @@
-@import "../shared";
+@import "~@mdanka/glass-ui/lib/scss/variables.scss";
 
 .hp-section {
   margin: 4em 0 0 0;
 }
 
 .hp-section-header {
-  color: $mainColour;
+  color: $glassMainColor;
   // border-bottom-style: solid;
   // border-bottom-width: 2px;
-  border-color: $mainColour;
+  border-color: $glassMainColor;
   margin-bottom: 0.5em;
   padding-bottom: 0.25em;
   

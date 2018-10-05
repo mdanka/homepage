@@ -21,7 +21,7 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                 <Overview />
 
                 <Section>
-                    <p className="hp-content-paragraph">
+                    <p className="md-running-text">
                         <img src={profileImage} className="hp-image-inline hp-image-left" />
                         Miklós is a software engineer, product manager, hiring manager, teacher, and public speaker. He
                         enjoys making friendly and easy-to-use software products, and making hard topics like
@@ -29,12 +29,12 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                         background, or expertise.
                     </p>
 
-                    <p className="hp-content-paragraph">
+                    <p className="md-running-text">
                         If you'd like to invite Miklós to speak at an event, please reach out{" "}
                         <a href="mailto:danka.miklos+homepage[AT]gmail.com">here</a>.
                     </p>
 
-                    <p className="hp-table-of-contents hp-center hp-content-paragraph hp-content-paragraph-full-width">
+                    <p className="hp-table-of-contents md-center md-running-text md-full-width">
                         Jump to:
                         <br />
                         <span className="hp-table-of-contents-links">
@@ -49,7 +49,7 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                 </Section>
 
                 <Section title={SectionTitles.ARTICLES}>
-                    <div className="hp-center hp-content-paragraph">
+                    <div className="md-center md-running-text">
                         <Box
                             title="Humans and Computers: Symbiosis or War?"
                             description="Will computers really replace humans? Or is there a different future awaiting?"
@@ -102,7 +102,7 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                 </Section>
 
                 <Section title={SectionTitles.EVENTS}>
-                    <div className="hp-center hp-content-paragraph">
+                    <div className="md-center md-running-text">
                         <Box
                             title="Humans and Computers: Symbiosis or War?"
                             description="Conference lecture and panel discussion with other experts."
@@ -145,7 +145,7 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                         />
                     </div>
 
-                    <p className="hp-center hp-content-paragraph hp-content-paragraph-small">
+                    <p className="md-center md-running-text md-running-text md-small">
                         Further events: Palantir Technologies, London, UK (2014); Churchill College, Cambridge, UK
                         (2011); Pembroke College, Cambridge, UK (2013); MaMuT maths camp, Mátrafüred, Hungary
                         (2010-present); Veres Péter Gimnázium, Budapest, Hungary (High School) (2012); Dürer
@@ -155,14 +155,14 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                 </Section>
 
                 <Section title={SectionTitles.TALKS}>
-                    <p className="hp-center hp-content-paragraph">
+                    <p className="md-center md-running-text">
                         Miklós gives talks on a wide range of topics, including technological trends, big data, machine
                         learning, UX design and product principles, mathematics, tech hiring, and business strategy. His
                         talks are adapted to the audience, let them be youngsters, non-technical listeners, or technical
                         and business experts.
                     </p>
 
-                    <div className="hp-center hp-content-paragraph">
+                    <div className="md-center md-running-text">
                         <Box
                             title="A Non-Technical Introduction to Bitcoin"
                             description="There's enormous hype, but little practical value. What are its advantages and dangers?"
@@ -221,7 +221,7 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                 </Section>
 
                 <Section title={SectionTitles.PROJECTS}>
-                    <div className="hp-center hp-content-paragraph">
+                    <div className="md-center md-running-text">
                         <Box
                             title="Momo Tabs (Work in Progress)"
                             description="Beautiful and lightweight guitar tabs and chord sheets."
@@ -242,7 +242,7 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                 </Section>
 
                 <Section title={SectionTitles.TEACHING}>
-                    <div className="hp-center hp-content-paragraph">
+                    <div className="md-center md-running-text">
                         <Box
                             title="Tech Camp"
                             description="Founder of a novel program to promote industrial programming with a purpose."
@@ -287,11 +287,11 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                 </Section>
 
                 <Section title={SectionTitles.DONATIONS}>
-                    <p className="hp-content-paragraph">
+                    <p className="md-running-text">
                         Miklós donates part of his income to causes that personally matter to him. He supports the
                         following charities and organisations:
                     </p>
-                    <div className="hp-content-paragraph">
+                    <div className="md-running-text">
                         <ul>
                             <li>
                                 <a href="http://agondolkodasorome.hu" target="_blank">

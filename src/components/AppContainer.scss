@@ -1,4 +1,4 @@
-@import "../shared";
+@import "~@mdanka/glass-ui/lib/scss/variables.scss";
 
 .hp-table-of-contents-links {
   display: flex;
@@ -12,35 +12,12 @@
   }
 }
 
-.hp-content-paragraph {
-  padding: 8px 0;
-  font-size: 16px;
-  line-height: 1.5;
-
-  ul, ol {
-    margin: 10px 0;
-    padding-left: 30px;
-  }
-
-  ul li:not(:last-child), ol li:not(:last-child) {
-    margin-bottom: 5px;
-  }
-}
-
-.hp-content-paragraph-small {
-  font-size: 14px;
-}
-
-.hp-content-paragraph-full-width {
-  width: 100%;
-}
-
 a, a:hover, a:active, a:visited {
-  color: @accentColour;
+  color: $glassAccentColor;
 }
 
 .hp-anchor {
-  color: @accentColour;
+  color: $glassAccentColor;
 
   &:hover {
     text-decoration: underline;

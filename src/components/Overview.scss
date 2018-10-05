@@ -1,11 +1,11 @@
-@import "../shared";
+@import "~@mdanka/glass-ui/lib/scss/variables.scss";
 
 .hp-overview-section {
   margin-top: 3em;
   text-align: center;
 
   .hp-overview-name {
-    color: @mainColour;
+    color: $glassMainColor;
     font-size: 40px;
     margin: 0 0 10px 0;
     line-height: 32px;
@@ -14,7 +14,7 @@
 
   .hp-overview-phonetics {
     font-size: 12px;
-    color: @subtleTextColour;
+    color: $glassSubtleColor;
   }
 
   .hp-overview-links {

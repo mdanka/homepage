@@ -1,0 +1,15 @@
+@import "~normalize.css";
+@import "~@mdanka/glass-ui/lib/css/index.css";
+@import "~@mdanka/glass-ui/lib/scss/variables.scss";
+
+@import "./components/index";
+
+.hp-image-inline{
+    max-width: 20%;
+    min-width: 140px;
+}
+
+.hp-image-left {
+    float: left;
+    margin: 0 20px 20px 0;
+}

@@ -25,9 +25,11 @@
     humps "^2.0.1"
     prop-types "^15.5.10"
 
-"@mdanka/glass-ui@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@mdanka/glass-ui/-/glass-ui-0.1.0.tgz#e1be59cfbcc2358a40b8f846f315418b376df9ca"
+"@mdanka/glass-ui@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@mdanka/glass-ui/-/glass-ui-0.2.0.tgz#7c90bfdf4c54f643c1b5bbfd19a39063a87bf204"
+  dependencies:
+    normalize.css "^8.0.0"
 
 "@types/classnames@^0.0.32":
   version "0.0.32"
@@ -3535,6 +3537,10 @@ normalize-range@^0.1.2:
 normalize.css@^5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/normalize.css/-/normalize.css-5.0.0.tgz#7cec875ce8178a5333c4de80b68ea9c18b9d7c37"
+
+normalize.css@^8.0.0:
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/normalize.css/-/normalize.css-8.0.0.tgz#14ac5e461612538a4ce9be90a7da23f86e718493"
 
 npm-bundled@^1.0.1:
   version "1.0.5"

@@ -25,6 +25,10 @@
     humps "^2.0.1"
     prop-types "^15.5.10"
 
+"@mdanka/glass-ui@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@mdanka/glass-ui/-/glass-ui-0.1.0.tgz#e1be59cfbcc2358a40b8f846f315418b376df9ca"
+
 "@types/classnames@^0.0.32":
   version "0.0.32"
   resolved "https://registry.yarnpkg.com/@types/classnames/-/classnames-0.0.32.tgz#449abcd9a826807811ef101e58df9f83cfc61713"

@@ -1,0 +1,251 @@
+@import "../shared";
+
+$boxBackground: #f2f3f5;
+
+$boxWidth: 500px;
+$boxHeight: 140px;
+$boxImageSize: $boxHeight;
+$boxContentWidth: $boxWidth - $boxImageSize;
+$boxContentHeight: $boxHeight;
+$boxContentPaddingVertical: 10px;
+$boxContentPaddingHorizontal: 12px;
+$boxContentTextWidth: $boxContentWidth - 2 * $boxContentPaddingVertical;
+$boxLanguageWidth: 30px;
+$boxLanguageHeight: $boxLanguageWidth * 2 / 3;
+$boxLanguageTop: 10px;
+$boxLanguageRight: $boxLanguageTop;
+
+$videoOverlaySize: $boxImageSize;
+$videoOverlayIconSize: 32px;
+$videoOverlayBackground: transparentize(#000000, 0.8);
+$videoOverlayHoverBackground: transparentize(#000000, 0.6);
+
+$boxMetadataFontSize: 12px;
+$boxMetadataLineHeight: 16px;
+$boxTitleFontSize: 16px;
+$boxTitleLineHeight: 20px;
+$boxDescriptionFontSize: 14px;
+$boxDescriptionLineHeight: 20px;
+
+.hp-box {
+  background-color: $boxBackground;
+  border: #dddfe2 1px solid;
+  border-width: 1px 1px 0 1px;
+  overflow: hidden;
+  position: relative;
+
+  width: $boxWidth;
+  height: $boxHeight;
+
+  a.hp-box-anchor {
+    color: inherit;
+    text-decoration: inherit;
+  }
+
+  &:last-child {
+    border-bottom: #dddfe2 1px solid;
+  }
+  
+  &.hp-box-interactive:hover {
+    background-color: darken($boxBackground, 5%);
+  }
+}
+
+.hp-box-content-container {
+  width: $boxWidth;
+  height: $boxHeight;
+}
+
+.hp-box-image-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: $boxImageSize;
+  width: $boxImageSize;
+  height: $boxImageSize;
+
+  background-color: white;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hp-box-video-overlay {
+  position: absolute;
+  top: ($boxImageSize - $videoOverlaySize) / 2;
+  left: ($boxImageSize - $videoOverlaySize) / 2;
+  min-width: $videoOverlaySize;
+  width: $videoOverlaySize;
+  height: $videoOverlaySize;
+
+  color: #eeeeee;
+  background-color: $videoOverlayBackground;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hp-box-video-overlay-icon {
+  font-size: $videoOverlayIconSize;
+}
+
+.hp-box-interactive:hover {
+  .hp-box-video-overlay {
+    background-color: $videoOverlayHoverBackground;
+  }
+}
+
+.hp-box-content {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+
+  position: absolute;
+  top: 0;
+  left: $boxImageSize;
+  width: $boxContentWidth;
+  height: $boxContentHeight;
+
+  padding: $boxContentPaddingVertical $boxContentPaddingHorizontal;
+}
+
+.hp-box-metadata {
+  width: $boxContentTextWidth;
+  margin: 5px 0 0 0;
+  color: #606770;
+  font-size: $boxMetadataFontSize;
+  line-height: $boxMetadataLineHeight;
+  min-height: $boxMetadataLineHeight;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+
+.hp-box-title {
+  width: $boxContentTextWidth;
+  margin: 5px 0 0 0;
+  font-weight: 600;
+  font-size: $boxTitleFontSize;
+  line-height: $boxTitleLineHeight;
+  min-height: $boxTitleLineHeight;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.hp-box-description {
+  width: $boxContentTextWidth;
+  margin: 3px 0 0 0;
+  color: #606770;
+  font-size: $boxDescriptionFontSize;
+  line-height: $boxDescriptionLineHeight;
+  min-height: $boxDescriptionLineHeight;
+  word-break: break-word;
+  overflow: hidden;
+}
+
+.hp-box-language {
+  width: $boxLanguageWidth;
+  height: $boxLanguageHeight;
+  
+  position: absolute;
+  top: $boxLanguageTop;
+  right: $boxLanguageRight;
+  z-index: 1;
+
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  &.hp-box-language-hu {
+    background-image: url("../assets/flag-hu.png");
+  }
+
+  &.hp-box-language-en {
+    background-image: url("../assets/flag-en.png");
+  }
+}
+
+// Media-dependent sizing
+
+@media (max-width: 576px) {
+  $boxWidth: 350px;
+  $boxHeight: 100px;
+  $boxImageSize: $boxHeight;
+  $boxContentWidth: $boxWidth - $boxImageSize;
+  $boxContentHeight: $boxHeight;
+  $boxContentPaddingVertical: 5px;
+  $boxContentPaddingHorizontal: 6px;
+  $boxContentTextWidth: $boxContentWidth - 2 * $boxContentPaddingVertical;
+  $boxLanguageWidth: 30px;
+  $boxLanguageHeight: $boxLanguageWidth * 2 / 3;
+  $boxLanguageTop: 7px;
+  $boxLanguageRight: $boxLanguageTop;
+
+  $videoOverlaySize: $boxImageSize;
+  $videoOverlayIconSize: 22px;
+  $videoOverlayBackground: transparentize(#000000, 0.8);
+  $videoOverlayHoverBackground: transparentize(#000000, 0.6);
+
+  $boxMetadataFontSize: 10px;
+  $boxMetadataLineHeight: 12px;
+  $boxTitleFontSize: 14px;
+  $boxTitleLineHeight: 16px;
+  $boxDescriptionFontSize: 11px;
+  $boxDescriptionLineHeight: 13px;
+
+  .hp-box {
+    width: $boxWidth;
+    height: $boxHeight;
+  }
+
+  .hp-box-image-container {
+    min-width: $boxImageSize;
+    width: $boxImageSize;
+    height: $boxImageSize;
+  }
+
+  .hp-box-video-overlay {
+    top: ($boxImageSize - $videoOverlaySize) / 2;
+    left: ($boxImageSize - $videoOverlaySize) / 2;
+    min-width: $videoOverlaySize;
+    width: $videoOverlaySize;
+    height: $videoOverlaySize;
+  }
+
+  .hp-box-video-overlay-icon {
+    font-size: $videoOverlayIconSize;
+  }
+
+  .hp-box-content {
+    left: $boxImageSize;
+    padding: $boxContentPaddingVertical $boxContentPaddingHorizontal;
+  }
+
+  .hp-box-metadata {
+    width: $boxContentTextWidth;
+    font-size: $boxMetadataFontSize;
+    line-height: $boxMetadataLineHeight;
+    min-height: $boxMetadataLineHeight;
+  }
+  
+  .hp-box-title {
+    width: $boxContentTextWidth;
+    font-size: $boxTitleFontSize;
+    line-height: $boxTitleLineHeight;
+    min-height: $boxTitleLineHeight;
+  }
+
+  .hp-box-description {
+    width: $boxContentTextWidth;
+    font-size: $boxDescriptionFontSize;
+    line-height: $boxDescriptionLineHeight;
+    min-height: $boxDescriptionLineHeight;
+  }
+
+  .hp-box-language {
+    top: $boxLanguageTop;
+    right: $boxLanguageRight;
+  }
+}

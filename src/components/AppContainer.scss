@@ -36,11 +36,11 @@
 }
 
 a, a:hover, a:active, a:visited {
-  color: @accentColour;
+  color: $accentColour;
 }
 
 .hp-anchor {
-  color: @accentColour;
+  color: $accentColour;
 
   &:hover {
     text-decoration: underline;

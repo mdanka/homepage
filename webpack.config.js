@@ -15,7 +15,7 @@ module.exports = {
     entry: {
         app: [
             path.resolve(__dirname, "src/app.tsx"),
-            path.resolve(__dirname, "src/app.less"),
+            path.resolve(__dirname, "src/app.scss"),
         ],
     },
     output: {
@@ -41,13 +41,19 @@ module.exports = {
                 exclude: /node_modules/,
             },
             {
-                test: /\.less$/,
+                test: /\.scss$/,
                 use: [{
                     loader: 'style-loader' // creates style nodes from JS strings
                 }, {
                     loader: 'css-loader' // translates CSS into CommonJS
                 }, {
-                    loader: 'less-loader' // compiles Less to CSS
+                    loader: 'resolve-url-loader'
+                }, {
+                    loader: 'sass-loader', // compiles SCSS to CSS
+                    options: {
+                        sourceMap: true,
+                        sourceMapContents: false
+                    }
                 }],
                 exclude: /node_modules/,
             },
@@ -72,7 +78,7 @@ module.exports = {
                     {
                         loader: "file-loader",
                         options: {
-                            name: "[name]-[hash].[ext]",
+                            name: "[name]-[hash].[ext]"
                         },
                     }
                 ]

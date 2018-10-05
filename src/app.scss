@@ -1,4 +1,3 @@
-@import "~normalize.css";
 @import "~@mdanka/glass-ui/lib/css/index.css";
 @import "~@mdanka/glass-ui/lib/scss/variables.scss";
 
@@ -12,4 +11,8 @@
 .hp-image-left {
     float: left;
     margin: 0 20px 20px 0;
+}
+
+h3 {
+    margin-top: 0;
 }

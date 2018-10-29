@@ -67,6 +67,14 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                             href="https://qubit.hu/2018/02/13/a-kriptovalutak-arnyoldala-miert-ne-fektess-bitcoinba"
                         />
                         <Box
+                            title="What happened in the recent Facebook hack?"
+                            description="Do you have to change your password? Did two-factor authentication fail? Answering these and other questions."
+                            language="hu"
+                            metadata="2018"
+                            image={require("../assets/boxImages/article-qubit-facebook-hack.jpeg")}
+                            href="https://qubit.hu/2018/10/29/mi-tortent-amikor-feltortek-a-facebook-fiokomat"
+                        />
+                        <Box
                             title="Choosing Universities Differently - EN"
                             description="Discussions around universities tend to be dominated by subject quality, while we undervalue elements like culture, mindset, and opportunities."
                             language="en"

@@ -67,8 +67,16 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                             href="https://qubit.hu/2018/02/13/a-kriptovalutak-arnyoldala-miert-ne-fektess-bitcoinba"
                         />
                         <Box
-                            title="What happened in the recent Facebook hack?"
+                            title="What happened in the recent Facebook hack? - EN"
                             description="Do you have to change your password? Did two-factor authentication fail? Answering these and other questions."
+                            language="en"
+                            metadata="2018"
+                            image={require("../assets/boxImages/article-qubit-facebook-hack.jpeg")}
+                            href="http://blog.miklosdanka.com/what-happened-when-our-facebook-accounts-got-hacked"
+                        />
+                        <Box
+                            title="What happened in the recent Facebook hack? - HU"
+                            description="Meg kell változtatni a jelszavunkat? Nem működött a kétlépcsős beléptetés? Megválaszoljuk ezeket a kérdéseket."
                             language="hu"
                             metadata="2018"
                             image={require("../assets/boxImages/article-qubit-facebook-hack.jpeg")}

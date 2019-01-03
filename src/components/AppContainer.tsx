@@ -180,6 +180,13 @@ export class AppContainer extends React.PureComponent<{}, {}> {
 
                     <div className="md-center md-running-text">
                         <Box
+                            title="Humans and Computers: Symbiosis or War?"
+                            description="Will computers really replace humans? Or is there a different future awaiting?"
+                            language="hu"
+                            metadata="2018"
+                            image={require("../assets/boxImages/article-qubit-human-computer-symbiosis.png")}
+                        />
+                        <Box
                             title="A Non-Technical Introduction to Bitcoin"
                             description="There's enormous hype, but little practical value. What are its advantages and dangers?"
                             language="hu"

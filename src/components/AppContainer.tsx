@@ -182,7 +182,6 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                         <Box
                             title="Humans and Computers: Symbiosis or War?"
                             description="Will computers really replace humans? Or is there a different future awaiting?"
-                            language="hu"
                             metadata="2018"
                             image={require("../assets/boxImages/article-qubit-human-computer-symbiosis.png")}
                         />

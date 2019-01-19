@@ -83,6 +83,14 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                             href="https://qubit.hu/2018/10/29/mi-tortent-amikor-feltortek-a-facebook-fiokomat"
                         />
                         <Box
+                            title="More than 723 million passwords leaked - HU"
+                            description="Details of a recent leak, and some easy steps to protect ourselves."
+                            language="hu"
+                            metadata="2019"
+                            image={require("../assets/boxImages/article-qubit-hack-2019.png")}
+                            href="https://qubit.hu/2019/01/18/tobb-mint-773-millio-felhasznalo-emalcimet-es-jelszavat-tettek-ki-az-internetre"
+                        />
+                        <Box
                             title="Choosing Universities Differently - EN"
                             description="Discussions around universities tend to be dominated by subject quality, while we undervalue elements like culture, mindset, and opportunities."
                             language="en"
@@ -119,6 +127,14 @@ export class AppContainer extends React.PureComponent<{}, {}> {
 
                 <Section title={SectionTitles.EVENTS}>
                     <div className="md-center md-running-text">
+                        <Box
+                            title="Algorithmic Thinking in Maths Classes"
+                            description="Workshop for teachers on bringing algorithmic thinking to Maths classes."
+                            language="hu"
+                            metadata="2019 - Fazekas Mihály Gimnázium"
+                            image={require("../assets/boxImages/event-fazekas-workshop-2019.jpg")}
+                            href="http://ratz.krudy.gyor.hu/index.php/programok/csutortok"
+                        />
                         <Box
                             title="Humans and Computers: Symbiosis or War?"
                             description="Conference lecture and panel discussion with other experts."
@@ -198,6 +214,11 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                             description="The internet is the wildest of virtual battlefields, where criminals and computer
                             scientists are fighting at every moment. Online safety, fraud, cons, tricks. Would you fall for them?"
                             image={require("../assets/boxImages/talk-cyberwars.png")}
+                        />
+                        <Box
+                            title="Are you really so rational?"
+                            description="Behavioural Economics research has shown that the human brain is less rational than we like to believe nowadays. Would you fall for these cognitive illusions?"
+                            image={require("../assets/boxImages/talk-cognitive-illusions.jpeg")}
                         />
                         <Box
                             title="How to Conquer Mars? (SpaceX)"

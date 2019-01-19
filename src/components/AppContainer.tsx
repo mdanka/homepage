@@ -133,7 +133,7 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                             language="hu"
                             metadata="2019 - Fazekas Mihály Gimnázium"
                             image={require("../assets/boxImages/event-fazekas-workshop-2019.jpg")}
-                            href="http://ratz.krudy.gyor.hu/index.php/programok/csutortok"
+                            href="https://www.fazekas.hu/"
                         />
                         <Box
                             title="Humans and Computers: Symbiosis or War?"

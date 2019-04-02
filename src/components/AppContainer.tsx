@@ -287,6 +287,14 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                 <Section title={SectionTitles.TEACHING}>
                     <div className="md-center md-running-text">
                         <Box
+                            title="Charles University - Programming in R"
+                            description="Lecturer for Statistical Programming for Psychologists in R, to support well-founded science."
+                            language="en"
+                            metadata="2019-present"
+                            image={require("../assets/boxImages/teaching-charles-university.png")}
+                            href="https://www.cuni.cz/UKEN-1.html"
+                        />
+                        <Box
                             title="Tech Camp"
                             description="Founder of a novel program to promote industrial programming with a purpose."
                             language="hu"

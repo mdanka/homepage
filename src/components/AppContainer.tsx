@@ -128,6 +128,22 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                 <Section title={SectionTitles.EVENTS}>
                     <div className="md-center md-running-text">
                         <Box
+                            title="AI and Digitalization in Society"
+                            description="What do terms like AI, ML, and singularity mean? What are its implications to society? Discussion with Dr György Csepeli."
+                            language="hu"
+                            metadata="2019 - Resonator Klub"
+                            image={require("../assets/boxImages/event-resonator-2019.png")}
+                            href="http://www.korossyszalon.hu/"
+                        />
+                        <Box
+                            title="Cyberwars - Tricks, Cons, and Fraud"
+                            description="Online safety, fraud, cons, tricks. Would you fall for them?"
+                            language="hu"
+                            metadata="2019 - Fazekas Fesztivál"
+                            image={require("../assets/boxImages/event-fazekas-fesztival-2019.png")}
+                            href="https://www.fazekas.hu/"
+                        />
+                        <Box
                             title="Algorithmic Thinking in Maths Classes"
                             description="Workshop for teachers on bringing algorithmic thinking to Maths classes."
                             language="hu"

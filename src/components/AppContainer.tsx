@@ -71,7 +71,7 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                             description="Do you have to change your password? Did two-factor authentication fail? Answering these and other questions."
                             language="en"
                             metadata="2018"
-                            image={require("../assets/boxImages/article-qubit-facebook-hack.jpeg")}
+                            image={require("../assets/boxImages/article-qubit-facebook-hack-2.png")}
                             href="http://blog.miklosdanka.com/what-happened-when-our-facebook-accounts-got-hacked"
                         />
                         <Box

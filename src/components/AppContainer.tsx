@@ -282,12 +282,12 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                 <Section title={SectionTitles.PROJECTS}>
                     <div className="md-center md-running-text">
                         <Box
-                            title="Momo Tabs (Work in Progress)"
-                            description="Beautiful and lightweight guitar tabs and chord sheets."
+                            title="Czech Practice"
+                            description="App for practising Czech declensions."
                             language="en"
-                            metadata="2018"
-                            image={require("../assets/boxImages/project-momotabs.png")}
-                            href="https://momotabs.com"
+                            metadata="2019"
+                            image={require("../assets/boxImages/project-czech.png")}
+                            href="https://czech.miklosdanka.com"
                         />
                         <Box
                             title="Momo Chords"
@@ -296,6 +296,14 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                             metadata="2018"
                             image={require("../assets/boxImages/project-momochords.png")}
                             href="https://momo-chords.miklosdanka.com"
+                        />
+                        <Box
+                            title="Momo Tabs"
+                            description="Beautiful and lightweight guitar tabs and chord sheets. Work in progress."
+                            language="en"
+                            metadata="2018"
+                            image={require("../assets/boxImages/project-momotabs.png")}
+                            href="https://momotabs.com"
                         />
                     </div>
                 </Section>

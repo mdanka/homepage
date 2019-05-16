@@ -65,7 +65,7 @@ export class Box extends React.PureComponent<IBoxProps, IBoxState> {
 
     private renderVideoOverlay = () => {
         const { href } = this.props;
-        if (href === undefined || href.indexOf("youtube.com") === -1) {
+        if (href === undefined || (href.indexOf("youtube.com") === -1 && href.indexOf("youtu.be") === -1)) {
             return null;
         }
         return (

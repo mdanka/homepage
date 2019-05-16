@@ -128,6 +128,14 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                 <Section title={SectionTitles.EVENTS}>
                     <div className="md-center md-running-text">
                         <Box
+                            title="Talents in Companies vs. in Education"
+                            description="Discussion with Gábor Bojár (Graphisoft founder), Ádám Somlai-Fischer (Prezi founder), and Ágota Bíró (Emarsys HR Lead)."
+                            language="hu"
+                            metadata="2019 - A Gondolkodás Öröme Alapítvány"
+                            image={require("../assets/boxImages/event-ago-tehetseg-2019.jpeg")}
+                            href="https://youtu.be/4cGeHFt7WKY"
+                        />
+                        <Box
                             title="AI and Digitalization in Society"
                             description="What do terms like AI, ML, and singularity mean? What are its implications to society? Discussion with Dr György Csepeli."
                             language="hu"

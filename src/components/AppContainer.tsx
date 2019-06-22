@@ -59,6 +59,14 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                             href="https://qubit.hu/2018/06/05/ember-es-gep-szimbiozis-vagy-haboru"
                         />
                         <Box
+                            title="Is the Hungarian e-voting system secure?"
+                            description="Why paper-based systems are still superior to e-voting."
+                            language="hu"
+                            metadata="2019"
+                            image={require("../assets/boxImages/article-qubit-evoting.jpeg")}
+                            href="https://qubit.hu/2019/06/19/mennyire-biztonsagos-a-fopolgarmesteri-elovalasztas-online-rendszere"
+                        />
+                        <Box
                             title="The Dark Side of Cryptocurrencies"
                             description="There's enormous hype, but little practical value. Is it wise to invest in Bitcoin?"
                             language="hu"

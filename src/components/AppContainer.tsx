@@ -136,6 +136,14 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                 <Section title={SectionTitles.EVENTS}>
                     <div className="md-center md-running-text">
                         <Box
+                            title="Are you listening, Alexa?"
+                            description="Discussion with leading researchers and experts about security in connected devices."
+                            language="en"
+                            metadata="2019 - ITU Conference"
+                            image={require("../assets/boxImages/event-itu-alexa-2019.jpg")}
+                            href="https://telecomworld.itu.int/2019-daily-highlights-day-3/are-you-listening-alexa-security-in-connected-devices/"
+                        />
+                        <Box
                             title="Talents in Companies vs. in Education"
                             description="Discussion with Gábor Bojár (Graphisoft founder), Ádám Somlai-Fischer (Prezi founder), and Ágota Bíró (Emarsys HR Lead)."
                             language="hu"

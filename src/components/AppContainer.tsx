@@ -140,7 +140,7 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                             description="Discussion with leading researchers and experts about security in connected devices."
                             language="en"
                             metadata="2019 - ITU Conference"
-                            image={require("../assets/boxImages/event-itu-alexa-2019.jpg")}
+                            image={require("../assets/boxImages/event-itu-alexa-2019.png")}
                             href="https://telecomworld.itu.int/2019-daily-highlights-day-3/are-you-listening-alexa-security-in-connected-devices/"
                         />
                         <Box

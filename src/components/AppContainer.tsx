@@ -51,6 +51,14 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                 <Section title={SectionTitles.ARTICLES}>
                     <div className="md-center md-running-text">
                         <Box
+                            title="This Job is Fulfilling"
+                            description="Portrait article in Forbes Hungary by Zsuzsanna Dömös"
+                            language="hu"
+                            metadata="2019"
+                            image={require("../assets/boxImages/article-forbes-portrait.png")}
+                            href="https://forbes.hu/a-jo-elet/semmi-panik-minden-kerdesedre-valaszolunk-a-hazai-ivovizzel-es-jovojevel-kapcsolatban"
+                        />
+                        <Box
                             title="Humans and Computers: Symbiosis or War?"
                             description="Will computers really replace humans? Or is there a different future awaiting?"
                             language="hu"

@@ -59,6 +59,14 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                             href="https://forbes.hu/a-jo-elet/semmi-panik-minden-kerdesedre-valaszolunk-a-hazai-ivovizzel-es-jovojevel-kapcsolatban"
                         />
                         <Box
+                            title="On mathematical thinking, career, and life"
+                            description="Q&A with students of The Joy of Thinking Foundation"
+                            language="hu"
+                            metadata="2020"
+                            image={require("../assets/boxImages/article-forbes-portrait.png")}
+                            href="https://soundcloud.com/a-gond-orome/beszelgetes-danka-miki"
+                        />
+                        <Box
                             title="Humans and Computers: Symbiosis or War?"
                             description="Will computers really replace humans? Or is there a different future awaiting?"
                             language="hu"

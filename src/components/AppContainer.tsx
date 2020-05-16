@@ -131,6 +131,14 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                             href="http://agondolkodasorome.hu/fb/danka-miklos-egyetemvalasztas-maskent/"
                         />
                         <Box
+                            title="Exam Strategies and Principles"
+                            description="Here are the strategies and principles that helped me become top-of-the-exam-papers three times in a row at Cambridge."
+                            language="en"
+                            metadata="2016"
+                            image={require("../assets/boxImages/article-exam-principles.jpg")}
+                            href="https://blog.miklosdanka.com/exam-strategies-and-principles"
+                        />
+                        <Box
                             title="Interview: Hungarian Education"
                             description="Live TV interview about the day-to-day effects of the Hungarian government's education policies. Interview."
                             language="hu"

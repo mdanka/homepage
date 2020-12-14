@@ -57,6 +57,7 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                             metadata="2020"
                             image={require("../assets/boxImages/article-ivsz-digitalk.jpg")}
                             href="https://ivsz.hu/podcastok/beleneztunk-a-palantir-technologies-titokzatos-vilagaba/"
+                            showPlayOverlay={true}
                         />
                         <Box
                             title="This Job, It's Fulfilling"

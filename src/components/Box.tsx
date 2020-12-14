@@ -10,6 +10,7 @@ export interface IBoxProps {
     language?: "hu" | "en";
     image?: any;
     metadata?: string;
+    showPlayOverlay?: boolean;
 }
 
 export interface IBoxState {}
@@ -64,10 +65,12 @@ export class Box extends React.PureComponent<IBoxProps, IBoxState> {
     };
 
     private renderVideoOverlay = () => {
-        const { href } = this.props;
+        const { href, showPlayOverlay } = this.props;
         if (
             href === undefined ||
-            (href.indexOf("youtube.com") === -1 &&
+            showPlayOverlay === false ||
+            (showPlayOverlay === undefined &&
+                href.indexOf("youtube.com") === -1 &&
                 href.indexOf("youtu.be") === -1 &&
                 href.indexOf("soundcloud.com") === -1)
         ) {

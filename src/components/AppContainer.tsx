@@ -51,6 +51,14 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                 <Section title={SectionTitles.ARTICLES}>
                     <div className="md-center md-running-text">
                         <Box
+                            title="Inside the mysterious world of Palantir"
+                            description="Interview about big data, Palantir, and human-computer cooperation"
+                            language="hu"
+                            metadata="2020"
+                            image={require("../assets/boxImages/article-ivsz-digitalk.jpg")}
+                            href="https://ivsz.hu/podcastok/beleneztunk-a-palantir-technologies-titokzatos-vilagaba/"
+                        />
+                        <Box
                             title="This Job, It's Fulfilling"
                             description="Portrait article in Forbes Hungary by Zsuzsanna Dömös"
                             language="en"

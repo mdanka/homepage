@@ -51,6 +51,15 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                 <Section title={SectionTitles.ARTICLES}>
                     <div className="md-center md-running-text">
                         <Box
+                            title="On human-centred AI"
+                            description="Panel discussion with experts on questions and issues around human-centred AI"
+                            language="hu"
+                            metadata="2020"
+                            image={require("../assets/boxImages/article-iask-ai.jpg")}
+                            href="https://iask.hu/hu/beszeljunk-az-emberkozpontu-mesterseges-intelligenciarol/"
+                            showPlayOverlay={true}
+                        />
+                        <Box
                             title="Inside the mysterious world of Palantir"
                             description="Interview about big data, Palantir, and human-computer cooperation"
                             language="hu"

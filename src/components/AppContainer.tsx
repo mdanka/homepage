@@ -52,6 +52,32 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                 <Section title={SectionTitles.ARTICLES}>
                     <div className="md-center md-running-text">
                         <Box
+                            title="On saving the first online primaries in Hungary"
+                            description={`Title: "Péter Jakab can thank a gay guy for having primaries at all"`}
+                            language="hu"
+                            metadata="2021"
+                            image={require("../assets/boxImages/news-444-2021.png")}
+                            href="https://www.youtube.com/watch?v=kKsNqdgA3zY"
+                            showPlayOverlay={true}
+                        />
+                        <Box
+                            title="On DDoS attacks and system crashes"
+                            description="Why do systems crash under (or without) DDoS attacks?"
+                            language="hu"
+                            metadata="2021"
+                            image={require("../assets/boxImages/article-24hu-ddos.jpg")}
+                            href="https://24.hu/tech/2021/09/30/online-elovalasztas-tamadas-tulterheles-forgalom-teszteles/"
+                        />
+                        <Box
+                            title="Interview about the Hungarian primaries"
+                            description={`"The system for the primaries is going to be more stable" - excerpt from Hungarian TV news`}
+                            language="hu"
+                            metadata="2021"
+                            image={require("../assets/boxImages/news-rtl-2021.png")}
+                            href="https://rtl.hu/rtlklub/hirek/a-szervezok-szerint-stabilabb-es-ellenallobb-rendszerrel-indul-ujra-az-ellenzeki-elovalasztas"
+                            showPlayOverlay={true}
+                        />
+                        <Box
                             title="On human-centred AI"
                             description="Panel discussion with experts on questions and issues around human-centred AI"
                             language="hu"

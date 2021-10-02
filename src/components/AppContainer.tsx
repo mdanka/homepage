@@ -23,7 +23,7 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                 <Section>
                     <p className="md-running-text">
                         <img src={profileImage} className="hp-image-inline hp-image-left" />
-                        Miklós is a technologist, working in business digitalisation, software engineering,
+                        Miklós is a technologist, working in politics, business digitalisation, software engineering,
                         product management, hiring management, teaching, and public speaking. He
                         enjoys making friendly and easy-to-use software products, and making hard topics like
                         mathematics and technology fun and enjoyable for all audiences, let them be of any age,

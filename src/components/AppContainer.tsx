@@ -383,6 +383,14 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                 <Section title={SectionTitles.PROJECTS}>
                     <div className="md-center md-running-text">
                         <Box
+                            title="Szózat"
+                            description="A Hungarian version of Wordle."
+                            language="hu"
+                            metadata="2022"
+                            image={require("../assets/boxImages/project-szozat.png")}
+                            href="https://szozat.miklosdanka.com"
+                        />
+                        <Box
                             title="Czech Practice"
                             description="App for practising Czech declensions."
                             language="en"

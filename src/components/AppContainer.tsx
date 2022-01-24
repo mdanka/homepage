@@ -213,6 +213,13 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                 <Section title={SectionTitles.EVENTS}>
                     <div className="md-center md-running-text">
                         <Box
+                            title="Secrets of Data Systems"
+                            description="Discussion with EU progressive parties on what makes data systems work."
+                            language="en"
+                            metadata="2021 - ALDE Conference"
+                            image={require("../assets/boxImages/white-square.png")}
+                        />
+                        <Box
                             title="Are you listening, Alexa?"
                             description="Discussion with leading researchers and experts about security in connected devices."
                             language="en"

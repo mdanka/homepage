@@ -390,6 +390,14 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                 <Section title={SectionTitles.PROJECTS}>
                     <div className="md-center md-running-text">
                         <Box
+                            title="STATELESS"
+                            description="Human-centred digital tools for progressive organisations in Europe"
+                            language="en"
+                            metadata="2022"
+                            image={require("../assets/boxImages/project-stateless-2022.png")}
+                            href="https://www.statelessworks.com"
+                        />
+                        <Box
                             title="Szózat"
                             description="A Hungarian version of Wordle."
                             language="hu"

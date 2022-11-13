@@ -4,6 +4,7 @@ import { Section } from "./Section";
 import { Box } from "./Box";
 
 const profileImage = require("../assets/boxImages/mdanka-profile.png");
+const statelessImage = require("../assets/boxImages/project-stateless-2022.png");
 
 enum SectionTitles {
     ARTICLES = "Articles & Interviews",
@@ -33,6 +34,15 @@ export class AppContainer extends React.PureComponent<{}, {}> {
                     <p className="md-running-text">
                         If you'd like to invite Miklós to speak at an event, please reach out{" "}
                         <a href="mailto:danka.miklos+homepage[AT]gmail.com">here</a>.
+                    </p>
+
+                    <p className="md-running-text" style={{ marginTop: "40px "}}>
+                        <img src={statelessImage} className="hp-image-inline hp-image-left" />
+                        We have started a tech consultancy & product business called{" "}
+                        <a href="https://www.statelessworks.com" target="_blank"><strong>Stateless</strong></a>.
+                        If you would like technology that
+                        is human-centred, robust, secure, and built by professionals with high-tech industry and
+                        governmental technology experience, then please <a href="mailto:info@statelessworks.com">get in touch</a>.
                     </p>
 
                     <p className="hp-table-of-contents md-center md-running-text md-full-width">
@@ -389,6 +399,14 @@ export class AppContainer extends React.PureComponent<{}, {}> {
 
                 <Section title={SectionTitles.PROJECTS}>
                     <div className="md-center md-running-text">
+                        <Box
+                            title="STATELESS"
+                            description="Human-centred digital tools for progressive organisations in Europe."
+                            language="en"
+                            metadata="2022"
+                            image={require("../assets/boxImages/project-stateless-2022.png")}
+                            href="https://www.statelessworks.com"
+                        />
                         <Box
                             title="Szózat"
                             description="A Hungarian version of Wordle."

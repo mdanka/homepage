@@ -52,7 +52,6 @@ module.exports = {
                     loader: 'sass-loader', // compiles SCSS to CSS
                     options: {
                         sourceMap: true,
-                        sourceMapContents: false
                     }
                 }],
                 exclude: /node_modules/,
